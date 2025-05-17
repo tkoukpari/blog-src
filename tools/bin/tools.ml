@@ -1,3 +1,3 @@
 open! Core
 
-let () = Tools_lib.command |> Command_unix.run
+let () = Command_unix.run Tools_lib.command 
