@@ -1,0 +1,309 @@
+(lang dune 3.18)
+(name yocaml_syndication)
+(version v2.2.0)
+(sections (lib .) (libexec .) (doc ../../doc/yocaml_syndication))
+(files
+ (lib
+  (META
+   __private__/yocaml_syndication_test/.public_cmi/yocaml_syndication_test.cmi
+   __private__/yocaml_syndication_test/.public_cmi/yocaml_syndication_test.cmt
+   __private__/yocaml_syndication_test/.public_cmi/yocaml_syndication_test__Atom_test.cmi
+   __private__/yocaml_syndication_test/.public_cmi/yocaml_syndication_test__Atom_test.cmt
+   __private__/yocaml_syndication_test/.public_cmi/yocaml_syndication_test__Opml_test.cmi
+   __private__/yocaml_syndication_test/.public_cmi/yocaml_syndication_test__Opml_test.cmt
+   __private__/yocaml_syndication_test/.public_cmi/yocaml_syndication_test__Rss1_test.cmi
+   __private__/yocaml_syndication_test/.public_cmi/yocaml_syndication_test__Rss1_test.cmt
+   __private__/yocaml_syndication_test/.public_cmi/yocaml_syndication_test__Rss2_test.cmi
+   __private__/yocaml_syndication_test/.public_cmi/yocaml_syndication_test__Rss2_test.cmt
+   __private__/yocaml_syndication_test/.public_cmi/yocaml_syndication_test__Test_util.cmi
+   __private__/yocaml_syndication_test/.public_cmi/yocaml_syndication_test__Test_util.cmt
+   __private__/yocaml_syndication_test/.public_cmi/yocaml_syndication_test__Test_util.cmti
+   __private__/yocaml_syndication_test/.public_cmi/yocaml_syndication_test__Xml_test.cmi
+   __private__/yocaml_syndication_test/.public_cmi/yocaml_syndication_test__Xml_test.cmt
+   __private__/yocaml_syndication_test/atom_test.ml
+   __private__/yocaml_syndication_test/opml_test.ml
+   __private__/yocaml_syndication_test/rss1_test.ml
+   __private__/yocaml_syndication_test/rss2_test.ml
+   __private__/yocaml_syndication_test/test_util.ml
+   __private__/yocaml_syndication_test/test_util.mli
+   __private__/yocaml_syndication_test/xml_test.ml
+   __private__/yocaml_syndication_test/yocaml_syndication_test.a
+   __private__/yocaml_syndication_test/yocaml_syndication_test.cma
+   __private__/yocaml_syndication_test/yocaml_syndication_test.cmx
+   __private__/yocaml_syndication_test/yocaml_syndication_test.cmxa
+   __private__/yocaml_syndication_test/yocaml_syndication_test.ml
+   __private__/yocaml_syndication_test/yocaml_syndication_test__Atom_test.cmx
+   __private__/yocaml_syndication_test/yocaml_syndication_test__Opml_test.cmx
+   __private__/yocaml_syndication_test/yocaml_syndication_test__Rss1_test.cmx
+   __private__/yocaml_syndication_test/yocaml_syndication_test__Rss2_test.cmx
+   __private__/yocaml_syndication_test/yocaml_syndication_test__Test_util.cmx
+   __private__/yocaml_syndication_test/yocaml_syndication_test__Xml_test.cmx
+   atom.ml
+   atom.mli
+   category.ml
+   category.mli
+   datetime.ml
+   datetime.mli
+   dune-package
+   generator.ml
+   generator.mli
+   lang.ml
+   lang.mli
+   media_type.ml
+   media_type.mli
+   opam
+   opml.ml
+   opml.mli
+   person.ml
+   person.mli
+   rss1.ml
+   rss1.mli
+   rss2.ml
+   rss2.mli
+   text_input.ml
+   text_input.mli
+   tz.ml
+   tz.mli
+   xml.ml
+   xml.mli
+   yocaml_syndication.a
+   yocaml_syndication.cma
+   yocaml_syndication.cmi
+   yocaml_syndication.cmt
+   yocaml_syndication.cmti
+   yocaml_syndication.cmx
+   yocaml_syndication.cmxa
+   yocaml_syndication.ml
+   yocaml_syndication.mli
+   yocaml_syndication__.cmi
+   yocaml_syndication__.cmt
+   yocaml_syndication__.cmx
+   yocaml_syndication__.ml
+   yocaml_syndication__Atom.cmi
+   yocaml_syndication__Atom.cmt
+   yocaml_syndication__Atom.cmti
+   yocaml_syndication__Atom.cmx
+   yocaml_syndication__Category.cmi
+   yocaml_syndication__Category.cmt
+   yocaml_syndication__Category.cmti
+   yocaml_syndication__Category.cmx
+   yocaml_syndication__Datetime.cmi
+   yocaml_syndication__Datetime.cmt
+   yocaml_syndication__Datetime.cmti
+   yocaml_syndication__Datetime.cmx
+   yocaml_syndication__Generator.cmi
+   yocaml_syndication__Generator.cmt
+   yocaml_syndication__Generator.cmti
+   yocaml_syndication__Generator.cmx
+   yocaml_syndication__Lang.cmi
+   yocaml_syndication__Lang.cmt
+   yocaml_syndication__Lang.cmti
+   yocaml_syndication__Lang.cmx
+   yocaml_syndication__Media_type.cmi
+   yocaml_syndication__Media_type.cmt
+   yocaml_syndication__Media_type.cmti
+   yocaml_syndication__Media_type.cmx
+   yocaml_syndication__Opml.cmi
+   yocaml_syndication__Opml.cmt
+   yocaml_syndication__Opml.cmti
+   yocaml_syndication__Opml.cmx
+   yocaml_syndication__Person.cmi
+   yocaml_syndication__Person.cmt
+   yocaml_syndication__Person.cmti
+   yocaml_syndication__Person.cmx
+   yocaml_syndication__Rss1.cmi
+   yocaml_syndication__Rss1.cmt
+   yocaml_syndication__Rss1.cmti
+   yocaml_syndication__Rss1.cmx
+   yocaml_syndication__Rss2.cmi
+   yocaml_syndication__Rss2.cmt
+   yocaml_syndication__Rss2.cmti
+   yocaml_syndication__Rss2.cmx
+   yocaml_syndication__Text_input.cmi
+   yocaml_syndication__Text_input.cmt
+   yocaml_syndication__Text_input.cmti
+   yocaml_syndication__Text_input.cmx
+   yocaml_syndication__Tz.cmi
+   yocaml_syndication__Tz.cmt
+   yocaml_syndication__Tz.cmti
+   yocaml_syndication__Tz.cmx
+   yocaml_syndication__Xml.cmi
+   yocaml_syndication__Xml.cmt
+   yocaml_syndication__Xml.cmti
+   yocaml_syndication__Xml.cmx))
+ (libexec
+  (__private__/yocaml_syndication_test/yocaml_syndication_test.cmxs
+   yocaml_syndication.cmxs))
+ (doc (CHANGES.md LICENSE README.md)))
+(library
+ (name yocaml_syndication)
+ (kind normal)
+ (archives (byte yocaml_syndication.cma) (native yocaml_syndication.cmxa))
+ (plugins (byte yocaml_syndication.cma) (native yocaml_syndication.cmxs))
+ (native_archives yocaml_syndication.a)
+ (requires yocaml)
+ (main_module_name Yocaml_syndication)
+ (modes byte native)
+ (modules
+  (wrapped
+   (group
+    (alias
+     (obj_name yocaml_syndication__)
+     (visibility public)
+     (kind alias)
+     (source
+      (path Yocaml_syndication__)
+      (impl (path yocaml_syndication__.ml-gen))))
+    (name Yocaml_syndication)
+    (modules
+     (module
+      (obj_name yocaml_syndication__Atom)
+      (visibility public)
+      (source (path Atom) (intf (path atom.mli)) (impl (path atom.ml))))
+     (module
+      (obj_name yocaml_syndication__Category)
+      (visibility public)
+      (source
+       (path Category)
+       (intf (path category.mli))
+       (impl (path category.ml))))
+     (module
+      (obj_name yocaml_syndication__Datetime)
+      (visibility public)
+      (source
+       (path Datetime)
+       (intf (path datetime.mli))
+       (impl (path datetime.ml))))
+     (module
+      (obj_name yocaml_syndication__Generator)
+      (visibility public)
+      (source
+       (path Generator)
+       (intf (path generator.mli))
+       (impl (path generator.ml))))
+     (module
+      (obj_name yocaml_syndication__Lang)
+      (visibility public)
+      (source (path Lang) (intf (path lang.mli)) (impl (path lang.ml))))
+     (module
+      (obj_name yocaml_syndication__Media_type)
+      (visibility public)
+      (source
+       (path Media_type)
+       (intf (path media_type.mli))
+       (impl (path media_type.ml))))
+     (module
+      (obj_name yocaml_syndication__Opml)
+      (visibility public)
+      (source (path Opml) (intf (path opml.mli)) (impl (path opml.ml))))
+     (module
+      (obj_name yocaml_syndication__Person)
+      (visibility public)
+      (source (path Person) (intf (path person.mli)) (impl (path person.ml))))
+     (module
+      (obj_name yocaml_syndication__Rss1)
+      (visibility public)
+      (source (path Rss1) (intf (path rss1.mli)) (impl (path rss1.ml))))
+     (module
+      (obj_name yocaml_syndication__Rss2)
+      (visibility public)
+      (source (path Rss2) (intf (path rss2.mli)) (impl (path rss2.ml))))
+     (module
+      (obj_name yocaml_syndication__Text_input)
+      (visibility public)
+      (source
+       (path Text_input)
+       (intf (path text_input.mli))
+       (impl (path text_input.ml))))
+     (module
+      (obj_name yocaml_syndication__Tz)
+      (visibility public)
+      (source (path Tz) (intf (path tz.mli)) (impl (path tz.ml))))
+     (module
+      (obj_name yocaml_syndication__Xml)
+      (visibility public)
+      (source (path Xml) (intf (path xml.mli)) (impl (path xml.ml))))
+     (module
+      (obj_name yocaml_syndication)
+      (visibility public)
+      (source
+       (path Yocaml_syndication)
+       (intf (path yocaml_syndication.mli))
+       (impl (path yocaml_syndication.ml))))))
+   (wrapped true))))
+(library
+ (name yocaml_syndication.__private__.yocaml_syndication_test)
+ (kind normal)
+ (archives
+  (byte __private__/yocaml_syndication_test/yocaml_syndication_test.cma)
+  (native __private__/yocaml_syndication_test/yocaml_syndication_test.cmxa))
+ (plugins
+  (byte __private__/yocaml_syndication_test/yocaml_syndication_test.cma)
+  (native __private__/yocaml_syndication_test/yocaml_syndication_test.cmxs))
+ (native_archives
+  __private__/yocaml_syndication_test/yocaml_syndication_test.a)
+ (requires
+  yocaml
+  yocaml_syndication
+  ppx_inline_test.config
+  ppx_inline_test.runtime-lib
+  ppx_here.runtime-lib
+  ppx_expect.runtime
+  ppx_expect.config)
+ (main_module_name Yocaml_syndication_test)
+ (modes byte native)
+ (obj_dir
+  (public_cmi_ocaml_dir .public_cmi)
+  (public_cmi_melange_dir melange/.public_cmi_melange))
+ (modules
+  (wrapped
+   (group
+    (alias
+     (obj_name yocaml_syndication_test)
+     (visibility public)
+     (kind alias)
+     (source
+      (path Yocaml_syndication_test)
+      (impl
+       (path
+        __private__/yocaml_syndication_test/yocaml_syndication_test.ml-gen))))
+    (name Yocaml_syndication_test)
+    (modules
+     (module
+      (obj_name yocaml_syndication_test__Atom_test)
+      (visibility public)
+      (source
+       (path Atom_test)
+       (impl (path __private__/yocaml_syndication_test/atom_test.ml))))
+     (module
+      (obj_name yocaml_syndication_test__Opml_test)
+      (visibility public)
+      (source
+       (path Opml_test)
+       (impl (path __private__/yocaml_syndication_test/opml_test.ml))))
+     (module
+      (obj_name yocaml_syndication_test__Rss1_test)
+      (visibility public)
+      (source
+       (path Rss1_test)
+       (impl (path __private__/yocaml_syndication_test/rss1_test.ml))))
+     (module
+      (obj_name yocaml_syndication_test__Rss2_test)
+      (visibility public)
+      (source
+       (path Rss2_test)
+       (impl (path __private__/yocaml_syndication_test/rss2_test.ml))))
+     (module
+      (obj_name yocaml_syndication_test__Test_util)
+      (visibility public)
+      (source
+       (path Test_util)
+       (intf (path __private__/yocaml_syndication_test/test_util.mli))
+       (impl (path __private__/yocaml_syndication_test/test_util.ml))))
+     (module
+      (obj_name yocaml_syndication_test__Xml_test)
+      (visibility public)
+      (source
+       (path Xml_test)
+       (impl (path __private__/yocaml_syndication_test/xml_test.ml))))))
+   (wrapped true))))

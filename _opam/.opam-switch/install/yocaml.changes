@@ -1,0 +1,189 @@
+opam-version: "2.0"
+added: [
+  "doc/yocaml" {"D"}
+  "doc/yocaml/CHANGES.md" {"F:S2921T1747497875."}
+  "doc/yocaml/LICENSE" {"F:S35138T1747497875."}
+  "doc/yocaml/README.md" {"F:S378T1747497875."}
+  "doc/yocaml/odoc-pages/data_validation.mld" {"F:S35859T1747497875."}
+  "doc/yocaml/odoc-pages/effect.mld" {"F:S1745T1747497875."}
+  "doc/yocaml/odoc-pages/index.mld" {"F:S1339T1747497875."}
+  "lib/yocaml" {"D"}
+  "lib/yocaml/META" {"F:S712T1747497875."}
+  "lib/yocaml/__private__/yocaml_expect_test/.public_cmi/yocaml_expect_test.cmi"
+    {"F:S398T1747497875."}
+  "lib/yocaml/__private__/yocaml_expect_test/.public_cmi/yocaml_expect_test.cmt"
+    {"F:S3531T1747497875."}
+  "lib/yocaml/__private__/yocaml_expect_test/.public_cmi/yocaml_expect_test__Slug_test.cmi"
+    {"F:S5906T1747497875."}
+  "lib/yocaml/__private__/yocaml_expect_test/.public_cmi/yocaml_expect_test__Slug_test.cmt"
+    {"F:S129617T1747497875."}
+  "lib/yocaml/__private__/yocaml_expect_test/.public_cmi/yocaml_expect_test__Toc_test.cmi"
+    {"F:S6758T1747497875."}
+  "lib/yocaml/__private__/yocaml_expect_test/.public_cmi/yocaml_expect_test__Toc_test.cmt"
+    {"F:S212333T1747497875."}
+  "lib/yocaml/__private__/yocaml_expect_test/slug_test.ml"
+    {"F:S3403T1747497875."}
+  "lib/yocaml/__private__/yocaml_expect_test/toc_test.ml"
+    {"F:S21395T1747497875."}
+  "lib/yocaml/__private__/yocaml_expect_test/yocaml_expect_test.a"
+    {"F:S124192T1747497875."}
+  "lib/yocaml/__private__/yocaml_expect_test/yocaml_expect_test.cma"
+    {"F:S112739T1747497875."}
+  "lib/yocaml/__private__/yocaml_expect_test/yocaml_expect_test.cmx"
+    {"F:S175T1747497875."}
+  "lib/yocaml/__private__/yocaml_expect_test/yocaml_expect_test.cmxa"
+    {"F:S12933T1747497875."}
+  "lib/yocaml/__private__/yocaml_expect_test/yocaml_expect_test.cmxs"
+    {"F:S124488T1747497875."}
+  "lib/yocaml/__private__/yocaml_expect_test/yocaml_expect_test.ml"
+    {"F:S215T1747497875."}
+  "lib/yocaml/__private__/yocaml_expect_test/yocaml_expect_test__Slug_test.cmx"
+    {"F:S6300T1747497875."}
+  "lib/yocaml/__private__/yocaml_expect_test/yocaml_expect_test__Toc_test.cmx"
+    {"F:S7105T1747497875."}
+  "lib/yocaml/action.ml" {"F:S8011T1747497875."}
+  "lib/yocaml/action.mli" {"F:S6354T1747497875."}
+  "lib/yocaml/archetype.ml" {"F:S14375T1747497875."}
+  "lib/yocaml/archetype.mli" {"F:S11971T1747497875."}
+  "lib/yocaml/cache.ml" {"F:S4295T1747497875."}
+  "lib/yocaml/cache.mli" {"F:S2280T1747497875."}
+  "lib/yocaml/cmd.ml" {"F:S2848T1747497875."}
+  "lib/yocaml/cmd.mli" {"F:S5919T1747497875."}
+  "lib/yocaml/data.ml" {"F:S11763T1747497875."}
+  "lib/yocaml/data.mli" {"F:S15275T1747497875."}
+  "lib/yocaml/deps.ml" {"F:S1819T1747497875."}
+  "lib/yocaml/deps.mli" {"F:S2554T1747497875."}
+  "lib/yocaml/diagnostic.ml" {"F:S4523T1747497875."}
+  "lib/yocaml/diagnostic.mli" {"F:S1399T1747497875."}
+  "lib/yocaml/dune-package" {"F:S9443T1747497875."}
+  "lib/yocaml/eff.ml" {"F:S9685T1747497875."}
+  "lib/yocaml/eff.mli" {"F:S15838T1747497875."}
+  "lib/yocaml/lexicon.ml" {"F:S4160T1747497875."}
+  "lib/yocaml/lexicon.mli" {"F:S2222T1747497875."}
+  "lib/yocaml/make.ml" {"F:S1767T1747497875."}
+  "lib/yocaml/make.mli" {"F:S1426T1747497875."}
+  "lib/yocaml/markup.ml" {"F:S2582T1747497875."}
+  "lib/yocaml/markup.mli" {"F:S1836T1747497875."}
+  "lib/yocaml/metadata.ml" {"F:S3064T1747497875."}
+  "lib/yocaml/metadata.mli" {"F:S2565T1747497875."}
+  "lib/yocaml/nel.ml" {"F:S3426T1747497875."}
+  "lib/yocaml/nel.mli" {"F:S5960T1747497875."}
+  "lib/yocaml/opam" {"F:S1068T1747497875."}
+  "lib/yocaml/path.ml" {"F:S6042T1747497875."}
+  "lib/yocaml/path.mli" {"F:S7901T1747497875."}
+  "lib/yocaml/pipeline.ml" {"F:S2818T1747497875."}
+  "lib/yocaml/pipeline.mli" {"F:S4011T1747497875."}
+  "lib/yocaml/reader.ml" {"F:S1077T1747497875."}
+  "lib/yocaml/reader.mli" {"F:S1101T1747497875."}
+  "lib/yocaml/required.mli" {"F:S9174T1747497875."}
+  "lib/yocaml/runtime.ml" {"F:S4956T1747497875."}
+  "lib/yocaml/runtime.mli" {"F:S1013T1747497875."}
+  "lib/yocaml/sexp.ml" {"F:S6007T1747497875."}
+  "lib/yocaml/sexp.mli" {"F:S3611T1747497875."}
+  "lib/yocaml/sexp_provider.ml" {"F:S2382T1747497875."}
+  "lib/yocaml/sexp_provider.mli" {"F:S802T1747497875."}
+  "lib/yocaml/slug.ml" {"F:S3455T1747497875."}
+  "lib/yocaml/slug.mli" {"F:S1672T1747497875."}
+  "lib/yocaml/task.ml" {"F:S7015T1747497875."}
+  "lib/yocaml/task.mli" {"F:S13915T1747497875."}
+  "lib/yocaml/yocaml.a" {"F:S709160T1747497875."}
+  "lib/yocaml/yocaml.cma" {"F:S778342T1747497875."}
+  "lib/yocaml/yocaml.cmi" {"F:S5056T1747497875."}
+  "lib/yocaml/yocaml.cmt" {"F:S13690T1747497875."}
+  "lib/yocaml/yocaml.cmti" {"F:S22986T1747497875."}
+  "lib/yocaml/yocaml.cmx" {"F:S2137T1747497875."}
+  "lib/yocaml/yocaml.cmxa" {"F:S22857T1747497875."}
+  "lib/yocaml/yocaml.cmxs" {"F:S563128T1747497875."}
+  "lib/yocaml/yocaml.ml" {"F:S1308T1747497875."}
+  "lib/yocaml/yocaml.mli" {"F:S2950T1747497875."}
+  "lib/yocaml/yocaml__.cmi" {"F:S2078T1747497875."}
+  "lib/yocaml/yocaml__.cmt" {"F:S13319T1747497875."}
+  "lib/yocaml/yocaml__.cmx" {"F:S515T1747497875."}
+  "lib/yocaml/yocaml__.ml" {"F:S1497T1747497875."}
+  "lib/yocaml/yocaml__Action.cmi" {"F:S5706T1747497875."}
+  "lib/yocaml/yocaml__Action.cmt" {"F:S93953T1747497875."}
+  "lib/yocaml/yocaml__Action.cmti" {"F:S34367T1747497875."}
+  "lib/yocaml/yocaml__Action.cmx" {"F:S3568T1747497875."}
+  "lib/yocaml/yocaml__Archetype.cmi" {"F:S10133T1747497875."}
+  "lib/yocaml/yocaml__Archetype.cmt" {"F:S254588T1747497875."}
+  "lib/yocaml/yocaml__Archetype.cmti" {"F:S64567T1747497875."}
+  "lib/yocaml/yocaml__Archetype.cmx" {"F:S9253T1747497875."}
+  "lib/yocaml/yocaml__Cache.cmi" {"F:S2456T1747497875."}
+  "lib/yocaml/yocaml__Cache.cmt" {"F:S54547T1747497875."}
+  "lib/yocaml/yocaml__Cache.cmti" {"F:S14541T1747497875."}
+  "lib/yocaml/yocaml__Cache.cmx" {"F:S2505T1747497875."}
+  "lib/yocaml/yocaml__Cmd.cmi" {"F:S3455T1747497875."}
+  "lib/yocaml/yocaml__Cmd.cmt" {"F:S40608T1747497875."}
+  "lib/yocaml/yocaml__Cmd.cmti" {"F:S27840T1747497875."}
+  "lib/yocaml/yocaml__Cmd.cmx" {"F:S3247T1747497875."}
+  "lib/yocaml/yocaml__Data.cmi" {"F:S15473T1747497875."}
+  "lib/yocaml/yocaml__Data.cmt" {"F:S184103T1747497875."}
+  "lib/yocaml/yocaml__Data.cmti" {"F:S93829T1747497875."}
+  "lib/yocaml/yocaml__Data.cmx" {"F:S5946T1747497875."}
+  "lib/yocaml/yocaml__Deps.cmi" {"F:S2226T1747497875."}
+  "lib/yocaml/yocaml__Deps.cmt" {"F:S38844T1747497875."}
+  "lib/yocaml/yocaml__Deps.cmti" {"F:S14676T1747497875."}
+  "lib/yocaml/yocaml__Deps.cmx" {"F:S4265T1747497875."}
+  "lib/yocaml/yocaml__Diagnostic.cmi" {"F:S1144T1747497875."}
+  "lib/yocaml/yocaml__Diagnostic.cmt" {"F:S89046T1747497875."}
+  "lib/yocaml/yocaml__Diagnostic.cmti" {"F:S7033T1747497875."}
+  "lib/yocaml/yocaml__Diagnostic.cmx" {"F:S2696T1747497875."}
+  "lib/yocaml/yocaml__Eff.cmi" {"F:S17588T1747497875."}
+  "lib/yocaml/yocaml__Eff.cmt" {"F:S144782T1747497875."}
+  "lib/yocaml/yocaml__Eff.cmti" {"F:S104802T1747497875."}
+  "lib/yocaml/yocaml__Eff.cmx" {"F:S6830T1747497875."}
+  "lib/yocaml/yocaml__Lexicon.cmi" {"F:S3940T1747497875."}
+  "lib/yocaml/yocaml__Lexicon.cmt" {"F:S55176T1747497875."}
+  "lib/yocaml/yocaml__Lexicon.cmti" {"F:S17666T1747497875."}
+  "lib/yocaml/yocaml__Lexicon.cmx" {"F:S2605T1747497875."}
+  "lib/yocaml/yocaml__Make.cmi" {"F:S2874T1747497875."}
+  "lib/yocaml/yocaml__Make.cmt" {"F:S19245T1747497875."}
+  "lib/yocaml/yocaml__Make.cmti" {"F:S12025T1747497875."}
+  "lib/yocaml/yocaml__Make.cmx" {"F:S2835T1747497875."}
+  "lib/yocaml/yocaml__Markup.cmi" {"F:S928T1747497875."}
+  "lib/yocaml/yocaml__Markup.cmt" {"F:S29559T1747497875."}
+  "lib/yocaml/yocaml__Markup.cmti" {"F:S8617T1747497875."}
+  "lib/yocaml/yocaml__Markup.cmx" {"F:S944T1747497875."}
+  "lib/yocaml/yocaml__Metadata.cmi" {"F:S2019T1747497875."}
+  "lib/yocaml/yocaml__Metadata.cmt" {"F:S35869T1747497875."}
+  "lib/yocaml/yocaml__Metadata.cmti" {"F:S13791T1747497875."}
+  "lib/yocaml/yocaml__Metadata.cmx" {"F:S1645T1747497875."}
+  "lib/yocaml/yocaml__Nel.cmi" {"F:S5244T1747497875."}
+  "lib/yocaml/yocaml__Nel.cmt" {"F:S62829T1747497875."}
+  "lib/yocaml/yocaml__Nel.cmti" {"F:S36679T1747497875."}
+  "lib/yocaml/yocaml__Nel.cmx" {"F:S3587T1747497875."}
+  "lib/yocaml/yocaml__Path.cmi" {"F:S12023T1747497875."}
+  "lib/yocaml/yocaml__Path.cmt" {"F:S97195T1747497875."}
+  "lib/yocaml/yocaml__Path.cmti" {"F:S51980T1747497875."}
+  "lib/yocaml/yocaml__Path.cmx" {"F:S6125T1747497875."}
+  "lib/yocaml/yocaml__Pipeline.cmi" {"F:S3386T1747497875."}
+  "lib/yocaml/yocaml__Pipeline.cmt" {"F:S38283T1747497875."}
+  "lib/yocaml/yocaml__Pipeline.cmti" {"F:S21168T1747497875."}
+  "lib/yocaml/yocaml__Pipeline.cmx" {"F:S2332T1747497875."}
+  "lib/yocaml/yocaml__Reader.cmi" {"F:S1226T1747497875."}
+  "lib/yocaml/yocaml__Reader.cmt" {"F:S8971T1747497875."}
+  "lib/yocaml/yocaml__Reader.cmti" {"F:S8729T1747497875."}
+  "lib/yocaml/yocaml__Reader.cmx" {"F:S500T1747497875."}
+  "lib/yocaml/yocaml__Required.cmi" {"F:S7925T1747497875."}
+  "lib/yocaml/yocaml__Required.cmti" {"F:S52311T1747497875."}
+  "lib/yocaml/yocaml__Runtime.cmi" {"F:S1386T1747497875."}
+  "lib/yocaml/yocaml__Runtime.cmt" {"F:S48215T1747497875."}
+  "lib/yocaml/yocaml__Runtime.cmti" {"F:S6801T1747497875."}
+  "lib/yocaml/yocaml__Runtime.cmx" {"F:S1368T1747497875."}
+  "lib/yocaml/yocaml__Sexp.cmi" {"F:S3031T1747497875."}
+  "lib/yocaml/yocaml__Sexp.cmt" {"F:S85641T1747497875."}
+  "lib/yocaml/yocaml__Sexp.cmti" {"F:S20413T1747497875."}
+  "lib/yocaml/yocaml__Sexp.cmx" {"F:S2281T1747497875."}
+  "lib/yocaml/yocaml__Sexp_provider.cmi" {"F:S1105T1747497875."}
+  "lib/yocaml/yocaml__Sexp_provider.cmt" {"F:S31455T1747497875."}
+  "lib/yocaml/yocaml__Sexp_provider.cmti" {"F:S5651T1747497875."}
+  "lib/yocaml/yocaml__Sexp_provider.cmx" {"F:S1439T1747497875."}
+  "lib/yocaml/yocaml__Slug.cmi" {"F:S1465T1747497875."}
+  "lib/yocaml/yocaml__Slug.cmt" {"F:S54629T1747497875."}
+  "lib/yocaml/yocaml__Slug.cmti" {"F:S9134T1747497875."}
+  "lib/yocaml/yocaml__Slug.cmx" {"F:S6225T1747497875."}
+  "lib/yocaml/yocaml__Task.cmi" {"F:S21652T1747497875."}
+  "lib/yocaml/yocaml__Task.cmt" {"F:S118730T1747497875."}
+  "lib/yocaml/yocaml__Task.cmti" {"F:S118321T1747497875."}
+  "lib/yocaml/yocaml__Task.cmx" {"F:S9573T1747497875."}
+]

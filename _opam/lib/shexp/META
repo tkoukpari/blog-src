@@ -1,0 +1,41 @@
+package "bigstring" (
+  directory = "bigstring"
+  version = "v0.17.0"
+  description = ""
+  requires = "threads"
+  archive(byte) = "shexp_bigstring.cma"
+  archive(native) = "shexp_bigstring.cmxa"
+  plugin(byte) = "shexp_bigstring.cma"
+  plugin(native) = "shexp_bigstring.cmxs"
+)
+package "bigstring-io" (
+  directory = "bigstring-io"
+  version = "v0.17.0"
+  description = ""
+  requires = "shexp.bigstring unix"
+  archive(byte) = "shexp_bigstring_io.cma"
+  archive(native) = "shexp_bigstring_io.cmxa"
+  plugin(byte) = "shexp_bigstring_io.cma"
+  plugin(native) = "shexp_bigstring_io.cmxs"
+)
+package "process" (
+  directory = "process"
+  version = "v0.17.0"
+  description = ""
+  requires =
+  "posixat shexp.bigstring shexp.bigstring-io shexp.sexp spawn threads unix"
+  archive(byte) = "shexp_process.cma"
+  archive(native) = "shexp_process.cmxa"
+  plugin(byte) = "shexp_process.cma"
+  plugin(native) = "shexp_process.cmxs"
+)
+package "sexp" (
+  directory = "sexp"
+  version = "v0.17.0"
+  description = ""
+  requires = "sexplib0"
+  archive(byte) = "shexp_sexp.cma"
+  archive(native) = "shexp_sexp.cmxa"
+  plugin(byte) = "shexp_sexp.cma"
+  plugin(native) = "shexp_sexp.cmxs"
+)

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+added: [
+  "doc/fieldslib" {"D"}
+  "doc/fieldslib/CHANGES.md" {"F:S1586T1747497643."}
+  "doc/fieldslib/LICENSE.md" {"F:S1126T1747497643."}
+  "lib/fieldslib" {"D"}
+  "lib/fieldslib/META" {"F:S186T1747497643."}
+  "lib/fieldslib/dune-package" {"F:S716T1747497643."}
+  "lib/fieldslib/fieldslib.a" {"F:S1400T1747497643."}
+  "lib/fieldslib/fieldslib.cma" {"F:S6453T1747497643."}
+  "lib/fieldslib/fieldslib.cmi" {"F:S4602T1747497643."}
+  "lib/fieldslib/fieldslib.cmt" {"F:S11792T1747497643."}
+  "lib/fieldslib/fieldslib.cmx" {"F:S4534T1747497643."}
+  "lib/fieldslib/fieldslib.cmxa" {"F:S4540T1747497643."}
+  "lib/fieldslib/fieldslib.cmxs" {"F:S34224T1747497643."}
+  "lib/fieldslib/fieldslib.ml" {"F:S50T1747497643."}
+  "lib/fieldslib/opam" {"F:S980T1747497643."}
+]

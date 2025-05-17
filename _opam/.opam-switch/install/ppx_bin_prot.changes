@@ -1,0 +1,41 @@
+opam-version: "2.0"
+added: [
+  "doc/ppx_bin_prot" {"D"}
+  "doc/ppx_bin_prot/CHANGES.md" {"F:S948T1747497666."}
+  "doc/ppx_bin_prot/LICENSE.md" {"F:S1126T1747497666."}
+  "doc/ppx_bin_prot/README.md" {"F:S4396T1747497666."}
+  "lib/ppx_bin_prot" {"D"}
+  "lib/ppx_bin_prot/META" {"F:S1192T1747497666."}
+  "lib/ppx_bin_prot/dune-package" {"F:S2042T1747497666."}
+  "lib/ppx_bin_prot/opam" {"F:S889T1747497666."}
+  "lib/ppx_bin_prot/ppx_bin_prot.a" {"F:S269104T1747497666."}
+  "lib/ppx_bin_prot/ppx_bin_prot.cma" {"F:S436052T1747497666."}
+  "lib/ppx_bin_prot/ppx_bin_prot.cmi" {"F:S4638T1747497666."}
+  "lib/ppx_bin_prot/ppx_bin_prot.cmt" {"F:S1308960T1747497666."}
+  "lib/ppx_bin_prot/ppx_bin_prot.cmti" {"F:S16151T1747497666."}
+  "lib/ppx_bin_prot/ppx_bin_prot.cmx" {"F:S22320T1747497666."}
+  "lib/ppx_bin_prot/ppx_bin_prot.cmxa" {"F:S8571T1747497666."}
+  "lib/ppx_bin_prot/ppx_bin_prot.cmxs" {"F:S270160T1747497666."}
+  "lib/ppx_bin_prot/ppx_bin_prot.ml" {"F:S69085T1747497666."}
+  "lib/ppx_bin_prot/ppx_bin_prot.mli" {"F:S453T1747497666."}
+  "lib/ppx_bin_prot/shape-expander/bin_shape_expand.a"
+    {"F:S67264T1747497666."}
+  "lib/ppx_bin_prot/shape-expander/bin_shape_expand.cma"
+    {"F:S88651T1747497666."}
+  "lib/ppx_bin_prot/shape-expander/bin_shape_expand.cmi"
+    {"F:S4417T1747497666."}
+  "lib/ppx_bin_prot/shape-expander/bin_shape_expand.cmt"
+    {"F:S262023T1747497666."}
+  "lib/ppx_bin_prot/shape-expander/bin_shape_expand.cmti"
+    {"F:S14938T1747497666."}
+  "lib/ppx_bin_prot/shape-expander/bin_shape_expand.cmx"
+    {"F:S13076T1747497666."}
+  "lib/ppx_bin_prot/shape-expander/bin_shape_expand.cmxa"
+    {"F:S7658T1747497666."}
+  "lib/ppx_bin_prot/shape-expander/bin_shape_expand.cmxs"
+    {"F:S101208T1747497666."}
+  "lib/ppx_bin_prot/shape-expander/bin_shape_expand.ml"
+    {"F:S12895T1747497666."}
+  "lib/ppx_bin_prot/shape-expander/bin_shape_expand.mli"
+    {"F:S334T1747497666."}
+]

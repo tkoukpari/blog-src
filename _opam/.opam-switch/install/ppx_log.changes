@@ -1,0 +1,204 @@
+opam-version: "2.0"
+added: [
+  "doc/ppx_log" {"D"}
+  "doc/ppx_log/CHANGES.md" {"F:S579T1747497670."}
+  "doc/ppx_log/LICENSE.md" {"F:S1126T1747497670."}
+  "lib/ppx_log" {"D"}
+  "lib/ppx_log/META" {"F:S3207T1747497670."}
+  "lib/ppx_log/dune-package" {"F:S12370T1747497670."}
+  "lib/ppx_log/kernel/extension_kind.ml" {"F:S1252T1747497670."}
+  "lib/ppx_log/kernel/extension_kind.mli" {"F:S432T1747497670."}
+  "lib/ppx_log/kernel/extension_payload.ml" {"F:S619T1747497670."}
+  "lib/ppx_log/kernel/extension_payload.mli" {"F:S660T1747497670."}
+  "lib/ppx_log/kernel/import.ml" {"F:S131T1747497670."}
+  "lib/ppx_log/kernel/log_kind.ml" {"F:S905T1747497670."}
+  "lib/ppx_log/kernel/log_kind.mli" {"F:S412T1747497670."}
+  "lib/ppx_log/kernel/log_statement.ml" {"F:S5821T1747497670."}
+  "lib/ppx_log/kernel/log_statement.mli" {"F:S187T1747497670."}
+  "lib/ppx_log/kernel/log_tag.ml" {"F:S4890T1747497670."}
+  "lib/ppx_log/kernel/log_tag.mli" {"F:S1051T1747497670."}
+  "lib/ppx_log/kernel/message_sexp.ml" {"F:S2572T1747497670."}
+  "lib/ppx_log/kernel/message_sexp.mli" {"F:S272T1747497670."}
+  "lib/ppx_log/kernel/optional_arg.ml" {"F:S449T1747497670."}
+  "lib/ppx_log/kernel/optional_arg.mli" {"F:S328T1747497670."}
+  "lib/ppx_log/kernel/parsed_extension.ml" {"F:S1027T1747497670."}
+  "lib/ppx_log/kernel/parsed_extension.mli" {"F:S279T1747497670."}
+  "lib/ppx_log/kernel/ppx.exe" {"F:S19691944T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel.a" {"F:S185448T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel.cma" {"F:S732302T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel.cmi" {"F:S4818T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel.cmt" {"F:S30865T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel.cmti" {"F:S15688T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel.cmx" {"F:S10113T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel.cmxa" {"F:S100083T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel.cmxs" {"F:S280288T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel.ml" {"F:S886T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel.mli" {"F:S129T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__.cmi" {"F:S1592T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__.cmt" {"F:S9059T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__.cmx" {"F:S489T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__.ml" {"F:S1172T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Extension_kind.cmi"
+    {"F:S9539T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Extension_kind.cmt"
+    {"F:S50703T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Extension_kind.cmti"
+    {"F:S29574T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Extension_kind.cmx"
+    {"F:S9098T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Extension_payload.cmi"
+    {"F:S8702T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Extension_payload.cmt"
+    {"F:S25304T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Extension_payload.cmti"
+    {"F:S24505T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Extension_payload.cmx"
+    {"F:S8470T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Import.cmi" {"F:S6731T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Import.cmt" {"F:S22038T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Import.cmx" {"F:S6736T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Log_kind.cmi" {"F:S9421T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Log_kind.cmt" {"F:S40901T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Log_kind.cmti" {"F:S28493T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Log_kind.cmx" {"F:S8843T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Log_statement.cmi"
+    {"F:S8748T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Log_statement.cmt"
+    {"F:S227093T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Log_statement.cmti"
+    {"F:S24045T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Log_statement.cmx"
+    {"F:S11557T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Log_tag.cmi" {"F:S9150T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Log_tag.cmt" {"F:S171899T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Log_tag.cmti" {"F:S28318T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Log_tag.cmx" {"F:S9860T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Message_sexp.cmi"
+    {"F:S8557T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Message_sexp.cmt"
+    {"F:S108333T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Message_sexp.cmti"
+    {"F:S23831T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Message_sexp.cmx"
+    {"F:S8915T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Optional_arg.cmi"
+    {"F:S8756T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Optional_arg.cmt"
+    {"F:S25363T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Optional_arg.cmti"
+    {"F:S25255T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Optional_arg.cmx"
+    {"F:S8501T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Parsed_extension.cmi"
+    {"F:S8781T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Parsed_extension.cmt"
+    {"F:S31937T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Parsed_extension.cmti"
+    {"F:S24812T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Parsed_extension.cmx"
+    {"F:S8609T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Ppxlib_with_sexp.cmi"
+    {"F:S302048T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Ppxlib_with_sexp.cmt"
+    {"F:S529406T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Ppxlib_with_sexp.cmti"
+    {"F:S821457T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Ppxlib_with_sexp.cmx"
+    {"F:S11491T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Tag_data.cmi" {"F:S9005T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Tag_data.cmt" {"F:S107590T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Tag_data.cmti" {"F:S27062T1747497670."}
+  "lib/ppx_log/kernel/ppx_log_kernel__Tag_data.cmx" {"F:S10562T1747497670."}
+  "lib/ppx_log/kernel/ppxlib_with_sexp.ml" {"F:S672T1747497670."}
+  "lib/ppx_log/kernel/ppxlib_with_sexp.mli" {"F:S240T1747497670."}
+  "lib/ppx_log/kernel/tag_data.ml" {"F:S3186T1747497670."}
+  "lib/ppx_log/kernel/tag_data.mli" {"F:S900T1747497670."}
+  "lib/ppx_log/opam" {"F:S1400T1747497670."}
+  "lib/ppx_log/ppx.exe" {"F:S19692392T1747497670."}
+  "lib/ppx_log/ppx_log.a" {"F:S2072T1747497670."}
+  "lib/ppx_log/ppx_log.cma" {"F:S6616T1747497670."}
+  "lib/ppx_log/ppx_log.cmi" {"F:S187T1747497670."}
+  "lib/ppx_log/ppx_log.cmt" {"F:S9459T1747497670."}
+  "lib/ppx_log/ppx_log.cmti" {"F:S4875T1747497670."}
+  "lib/ppx_log/ppx_log.cmx" {"F:S4590T1747497670."}
+  "lib/ppx_log/ppx_log.cmxa" {"F:S4573T1747497670."}
+  "lib/ppx_log/ppx_log.cmxs" {"F:S50928T1747497670."}
+  "lib/ppx_log/ppx_log.ml" {"F:S23T1747497670."}
+  "lib/ppx_log/ppx_log.mli" {"F:S25T1747497670."}
+  "lib/ppx_log/syntax/ppx_log_syntax.a" {"F:S3896T1747497670."}
+  "lib/ppx_log/syntax/ppx_log_syntax.cma" {"F:S11591T1747497670."}
+  "lib/ppx_log/syntax/ppx_log_syntax.cmi" {"F:S9619T1747497670."}
+  "lib/ppx_log/syntax/ppx_log_syntax.cmt" {"F:S15832T1747497670."}
+  "lib/ppx_log/syntax/ppx_log_syntax.cmti" {"F:S27051T1747497670."}
+  "lib/ppx_log/syntax/ppx_log_syntax.cmx" {"F:S8050T1747497670."}
+  "lib/ppx_log/syntax/ppx_log_syntax.cmxa" {"F:S7438T1747497670."}
+  "lib/ppx_log/syntax/ppx_log_syntax.cmxs" {"F:S52064T1747497670."}
+  "lib/ppx_log/syntax/ppx_log_syntax.ml" {"F:S412T1747497670."}
+  "lib/ppx_log/syntax/ppx_log_syntax.mli" {"F:S1545T1747497670."}
+  "lib/ppx_log/types/import.ml" {"F:S14T1747497670."}
+  "lib/ppx_log/types/jsonaf.ml" {"F:S188T1747497670."}
+  "lib/ppx_log/types/jsonaf.mli" {"F:S188T1747497670."}
+  "lib/ppx_log/types/level.ml" {"F:S91T1747497670."}
+  "lib/ppx_log/types/level.mli" {"F:S112T1747497670."}
+  "lib/ppx_log/types/log_tag.ml" {"F:S576T1747497670."}
+  "lib/ppx_log/types/log_tag.mli" {"F:S300T1747497670."}
+  "lib/ppx_log/types/message_data.ml" {"F:S282T1747497670."}
+  "lib/ppx_log/types/message_data.mli" {"F:S182T1747497670."}
+  "lib/ppx_log/types/message_sexp.ml" {"F:S2021T1747497670."}
+  "lib/ppx_log/types/message_sexp.mli" {"F:S806T1747497670."}
+  "lib/ppx_log/types/message_source.ml" {"F:S1023T1747497670."}
+  "lib/ppx_log/types/message_source.mli" {"F:S348T1747497670."}
+  "lib/ppx_log/types/ppx_log_types.a" {"F:S106512T1747497670."}
+  "lib/ppx_log/types/ppx_log_types.cma" {"F:S173142T1747497670."}
+  "lib/ppx_log/types/ppx_log_types.cmi" {"F:S9049T1747497670."}
+  "lib/ppx_log/types/ppx_log_types.cmt" {"F:S31867T1747497670."}
+  "lib/ppx_log/types/ppx_log_types.cmx" {"F:S7237T1747497670."}
+  "lib/ppx_log/types/ppx_log_types.cmxa" {"F:S53594T1747497670."}
+  "lib/ppx_log/types/ppx_log_types.cmxs" {"F:S162880T1747497670."}
+  "lib/ppx_log/types/ppx_log_types.ml" {"F:S1307T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__.cmi" {"F:S1157T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__.cmt" {"F:S7152T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__.cmx" {"F:S357T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__.ml" {"F:S792T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Import.cmi" {"F:S6728T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Import.cmt" {"F:S20960T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Import.cmx" {"F:S6734T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Jsonaf.cmi" {"F:S6094T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Jsonaf.cmt" {"F:S22203T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Jsonaf.cmti" {"F:S18646T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Jsonaf.cmx" {"F:S5654T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Level.cmi" {"F:S5864T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Level.cmt" {"F:S15109T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Level.cmti" {"F:S17547T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Level.cmx" {"F:S5624T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Log_tag.cmi" {"F:S6817T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Log_tag.cmt" {"F:S26814T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Log_tag.cmti" {"F:S21927T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Log_tag.cmx" {"F:S6348T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Message_data.cmi" {"F:S6312T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Message_data.cmt"
+    {"F:S20105T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Message_data.cmti"
+    {"F:S19022T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Message_data.cmx" {"F:S5892T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Message_sexp.cmi" {"F:S6963T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Message_sexp.cmt"
+    {"F:S59211T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Message_sexp.cmti"
+    {"F:S23170T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Message_sexp.cmx" {"F:S8410T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Message_source.cmi"
+    {"F:S6551T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Message_source.cmt"
+    {"F:S55326T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Message_source.cmti"
+    {"F:S20473T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Message_source.cmx"
+    {"F:S6597T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Tag_data.cmi" {"F:S6941T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Tag_data.cmt" {"F:S106161T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Tag_data.cmti" {"F:S22369T1747497670."}
+  "lib/ppx_log/types/ppx_log_types__Tag_data.cmx" {"F:S10517T1747497670."}
+  "lib/ppx_log/types/tag_data.ml" {"F:S875T1747497670."}
+  "lib/ppx_log/types/tag_data.mli" {"F:S347T1747497670."}
+]

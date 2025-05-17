@@ -1,0 +1,37 @@
+opam-version: "2.0"
+added: [
+  "doc/posixat" {"D"}
+  "doc/posixat/CHANGES.md" {"F:S66T1747497941."}
+  "doc/posixat/LICENSE.md" {"F:S1126T1747497941."}
+  "doc/posixat/README.org" {"F:S134T1747497941."}
+  "lib/posixat" {"D"}
+  "lib/posixat/META" {"F:S218T1747497941."}
+  "lib/posixat/dune-package" {"F:S1905T1747497941."}
+  "lib/posixat/libposixat_stubs.a" {"F:S43256T1747497941."}
+  "lib/posixat/opam" {"F:S996T1747497941."}
+  "lib/posixat/posixat.a" {"F:S41960T1747497941."}
+  "lib/posixat/posixat.cma" {"F:S62992T1747497941."}
+  "lib/posixat/posixat.cmi" {"F:S12897T1747497941."}
+  "lib/posixat/posixat.cmt" {"F:S19012T1747497941."}
+  "lib/posixat/posixat.cmti" {"F:S51323T1747497941."}
+  "lib/posixat/posixat.cmx" {"F:S8404T1747497941."}
+  "lib/posixat/posixat.cmxa" {"F:S14173T1747497941."}
+  "lib/posixat/posixat.cmxs" {"F:S101136T1747497941."}
+  "lib/posixat/posixat.ml" {"F:S346T1747497941."}
+  "lib/posixat/posixat.mli" {"F:S2688T1747497941."}
+  "lib/posixat/posixat__.cmi" {"F:S513T1747497941."}
+  "lib/posixat/posixat__.cmt" {"F:S3882T1747497941."}
+  "lib/posixat/posixat__.cmx" {"F:S171T1747497941."}
+  "lib/posixat/posixat__.ml" {"F:S258T1747497941."}
+  "lib/posixat/posixat__Posixat_generated.cmi" {"F:S8112T1747497941."}
+  "lib/posixat/posixat__Posixat_generated.cmt" {"F:S35373T1747497941."}
+  "lib/posixat/posixat__Posixat_generated.cmx" {"F:S4715T1747497941."}
+  "lib/posixat/posixat__Types.cmi" {"F:S10264T1747497941."}
+  "lib/posixat/posixat__Types.cmt" {"F:S82547T1747497941."}
+  "lib/posixat/posixat__Types.cmti" {"F:S37713T1747497941."}
+  "lib/posixat/posixat__Types.cmx" {"F:S6857T1747497941."}
+  "lib/posixat/posixat_generated.ml" {"F:S2242T1747497941."}
+  "lib/posixat/types.ml" {"F:S2928T1747497941."}
+  "lib/posixat/types.mli" {"F:S1514T1747497941."}
+  "lib/stublibs/dllposixat_stubs.so" {"F:S55504T1747497941."}
+]

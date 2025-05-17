@@ -1,0 +1,26 @@
+version = "v2.2.0"
+description = "The core engine of YOCaml"
+requires = ""
+archive(byte) = "yocaml.cma"
+archive(native) = "yocaml.cmxa"
+plugin(byte) = "yocaml.cma"
+plugin(native) = "yocaml.cmxs"
+package "__private__" (
+  directory = "__private__"
+  package "yocaml_expect_test" (
+    directory = "yocaml_expect_test"
+    version = "v2.2.0"
+    description = ""
+    requires =
+    "ppx_expect.config
+     ppx_expect.runtime
+     ppx_here.runtime-lib
+     ppx_inline_test.config
+     ppx_inline_test.runtime-lib
+     yocaml"
+    archive(byte) = "yocaml_expect_test.cma"
+    archive(native) = "yocaml_expect_test.cmxa"
+    plugin(byte) = "yocaml_expect_test.cma"
+    plugin(native) = "yocaml_expect_test.cmxs"
+  )
+)

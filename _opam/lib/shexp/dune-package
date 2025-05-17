@@ -1,0 +1,358 @@
+(lang dune 3.18)
+(name shexp)
+(version v0.17.0)
+(sections (lib .) (libexec .) (doc ../../doc/shexp) (stublibs ../stublibs))
+(files
+ (lib
+  (META
+   bigstring-io/bigstring.ml
+   bigstring-io/bigstring.mli
+   bigstring-io/libshexp_bigstring_io_stubs.a
+   bigstring-io/shexp_bigstring_io.a
+   bigstring-io/shexp_bigstring_io.cma
+   bigstring-io/shexp_bigstring_io.cmi
+   bigstring-io/shexp_bigstring_io.cmt
+   bigstring-io/shexp_bigstring_io.cmx
+   bigstring-io/shexp_bigstring_io.cmxa
+   bigstring-io/shexp_bigstring_io.ml
+   bigstring-io/shexp_bigstring_io__Bigstring.cmi
+   bigstring-io/shexp_bigstring_io__Bigstring.cmt
+   bigstring-io/shexp_bigstring_io__Bigstring.cmti
+   bigstring-io/shexp_bigstring_io__Bigstring.cmx
+   bigstring-io/shexp_bigstring_io__Std.cmi
+   bigstring-io/shexp_bigstring_io__Std.cmt
+   bigstring-io/shexp_bigstring_io__Std.cmx
+   bigstring-io/std.ml
+   bigstring/bigstring.ml
+   bigstring/bigstring.mli
+   bigstring/libshexp_bigstring_stubs.a
+   bigstring/shexp_bigstring.a
+   bigstring/shexp_bigstring.cma
+   bigstring/shexp_bigstring.cmi
+   bigstring/shexp_bigstring.cmt
+   bigstring/shexp_bigstring.cmx
+   bigstring/shexp_bigstring.cmxa
+   bigstring/shexp_bigstring.ml
+   bigstring/shexp_bigstring__Bigstring.cmi
+   bigstring/shexp_bigstring__Bigstring.cmt
+   bigstring/shexp_bigstring__Bigstring.cmti
+   bigstring/shexp_bigstring__Bigstring.cmx
+   bigstring/shexp_bigstring__Std.cmi
+   bigstring/shexp_bigstring__Std.cmt
+   bigstring/shexp_bigstring__Std.cmx
+   bigstring/std.ml
+   dune-package
+   opam
+   process/debugger_intf.ml
+   process/debuggers.ml
+   process/debuggers.mli
+   process/env.ml
+   process/env.mli
+   process/exit_status.ml
+   process/exit_status.mli
+   process/import.ml
+   process/job.ml
+   process/job.mli
+   process/prim.ml
+   process/prim.mli
+   process/process.ml
+   process/process.mli
+   process/shexp_process.a
+   process/shexp_process.cma
+   process/shexp_process.cmi
+   process/shexp_process.cmt
+   process/shexp_process.cmx
+   process/shexp_process.cmxa
+   process/shexp_process.ml
+   process/shexp_process__.cmi
+   process/shexp_process__.cmt
+   process/shexp_process__.cmx
+   process/shexp_process__.ml
+   process/shexp_process__Debugger_intf.cmi
+   process/shexp_process__Debugger_intf.cmt
+   process/shexp_process__Debugger_intf.cmx
+   process/shexp_process__Debuggers.cmi
+   process/shexp_process__Debuggers.cmt
+   process/shexp_process__Debuggers.cmti
+   process/shexp_process__Debuggers.cmx
+   process/shexp_process__Env.cmi
+   process/shexp_process__Env.cmt
+   process/shexp_process__Env.cmti
+   process/shexp_process__Env.cmx
+   process/shexp_process__Exit_status.cmi
+   process/shexp_process__Exit_status.cmt
+   process/shexp_process__Exit_status.cmti
+   process/shexp_process__Exit_status.cmx
+   process/shexp_process__Import.cmi
+   process/shexp_process__Import.cmt
+   process/shexp_process__Import.cmx
+   process/shexp_process__Job.cmi
+   process/shexp_process__Job.cmt
+   process/shexp_process__Job.cmti
+   process/shexp_process__Job.cmx
+   process/shexp_process__Prim.cmi
+   process/shexp_process__Prim.cmt
+   process/shexp_process__Prim.cmti
+   process/shexp_process__Prim.cmx
+   process/shexp_process__Process.cmi
+   process/shexp_process__Process.cmt
+   process/shexp_process__Process.cmti
+   process/shexp_process__Process.cmx
+   process/shexp_process__Signal.cmi
+   process/shexp_process__Signal.cmt
+   process/shexp_process__Signal.cmti
+   process/shexp_process__Signal.cmx
+   process/shexp_process__Std.cmi
+   process/shexp_process__Std.cmt
+   process/shexp_process__Std.cmx
+   process/shexp_process__Std_io.cmi
+   process/shexp_process__Std_io.cmt
+   process/shexp_process__Std_io.cmti
+   process/shexp_process__Std_io.cmx
+   process/signal.ml
+   process/signal.mli
+   process/std.ml
+   process/std_io.ml
+   process/std_io.mli
+   sexp/sexp.ml
+   sexp/sexp.mli
+   sexp/shexp_sexp.a
+   sexp/shexp_sexp.cma
+   sexp/shexp_sexp.cmi
+   sexp/shexp_sexp.cmt
+   sexp/shexp_sexp.cmx
+   sexp/shexp_sexp.cmxa
+   sexp/shexp_sexp.ml
+   sexp/shexp_sexp__Sexp.cmi
+   sexp/shexp_sexp__Sexp.cmt
+   sexp/shexp_sexp__Sexp.cmti
+   sexp/shexp_sexp__Sexp.cmx
+   sexp/shexp_sexp__Std.cmi
+   sexp/shexp_sexp__Std.cmt
+   sexp/shexp_sexp__Std.cmx
+   sexp/std.ml))
+ (libexec
+  (bigstring-io/shexp_bigstring_io.cmxs
+   bigstring/shexp_bigstring.cmxs
+   process/shexp_process.cmxs
+   sexp/shexp_sexp.cmxs))
+ (doc (CHANGES.md LICENSE.md README.org))
+ (stublibs (dllshexp_bigstring_io_stubs.so dllshexp_bigstring_stubs.so)))
+(library
+ (name shexp.bigstring)
+ (kind normal)
+ (archives
+  (byte bigstring/shexp_bigstring.cma)
+  (native bigstring/shexp_bigstring.cmxa))
+ (plugins
+  (byte bigstring/shexp_bigstring.cma)
+  (native bigstring/shexp_bigstring.cmxs))
+ (foreign_objects bigstring/bigstring_stubs.o)
+ (foreign_archives
+  (archives (for all) (files bigstring/libshexp_bigstring_stubs.a)))
+ (foreign_dll_files ../stublibs/dllshexp_bigstring_stubs.so)
+ (native_archives bigstring/shexp_bigstring.a)
+ (requires threads)
+ (main_module_name Shexp_bigstring)
+ (modes byte native)
+ (modules
+  (wrapped
+   (group
+    (alias
+     (obj_name shexp_bigstring)
+     (visibility public)
+     (kind alias)
+     (source
+      (path Shexp_bigstring)
+      (impl (path bigstring/shexp_bigstring.ml-gen))))
+    (name Shexp_bigstring)
+    (modules
+     (module
+      (obj_name shexp_bigstring__Bigstring)
+      (visibility public)
+      (source
+       (path Bigstring)
+       (intf (path bigstring/bigstring.mli))
+       (impl (path bigstring/bigstring.ml))))
+     (module
+      (obj_name shexp_bigstring__Std)
+      (visibility public)
+      (source (path Std) (impl (path bigstring/std.ml))))))
+   (wrapped true))))
+(library
+ (name shexp.bigstring-io)
+ (kind normal)
+ (archives
+  (byte bigstring-io/shexp_bigstring_io.cma)
+  (native bigstring-io/shexp_bigstring_io.cmxa))
+ (plugins
+  (byte bigstring-io/shexp_bigstring_io.cma)
+  (native bigstring-io/shexp_bigstring_io.cmxs))
+ (foreign_objects bigstring-io/bigstring_io_stubs.o)
+ (foreign_archives
+  (archives (for all) (files bigstring-io/libshexp_bigstring_io_stubs.a)))
+ (foreign_dll_files ../stublibs/dllshexp_bigstring_io_stubs.so)
+ (native_archives bigstring-io/shexp_bigstring_io.a)
+ (requires shexp.bigstring unix)
+ (main_module_name Shexp_bigstring_io)
+ (modes byte native)
+ (modules
+  (wrapped
+   (group
+    (alias
+     (obj_name shexp_bigstring_io)
+     (visibility public)
+     (kind alias)
+     (source
+      (path Shexp_bigstring_io)
+      (impl (path bigstring-io/shexp_bigstring_io.ml-gen))))
+    (name Shexp_bigstring_io)
+    (modules
+     (module
+      (obj_name shexp_bigstring_io__Bigstring)
+      (visibility public)
+      (source
+       (path Bigstring)
+       (intf (path bigstring-io/bigstring.mli))
+       (impl (path bigstring-io/bigstring.ml))))
+     (module
+      (obj_name shexp_bigstring_io__Std)
+      (visibility public)
+      (source (path Std) (impl (path bigstring-io/std.ml))))))
+   (wrapped true))))
+(library
+ (name shexp.process)
+ (kind normal)
+ (archives
+  (byte process/shexp_process.cma)
+  (native process/shexp_process.cmxa))
+ (plugins
+  (byte process/shexp_process.cma)
+  (native process/shexp_process.cmxs))
+ (native_archives process/shexp_process.a)
+ (requires
+  unix
+  threads
+  spawn
+  shexp.sexp
+  shexp.bigstring
+  shexp.bigstring-io
+  posixat)
+ (main_module_name Shexp_process)
+ (modes byte native)
+ (modules
+  (wrapped
+   (group
+    (alias
+     (obj_name shexp_process__)
+     (visibility public)
+     (kind alias)
+     (source
+      (path Shexp_process__)
+      (impl (path process/shexp_process__.ml-gen))))
+    (name Shexp_process)
+    (modules
+     (module
+      (obj_name shexp_process__Debugger_intf)
+      (visibility public)
+      (source (path Debugger_intf) (impl (path process/debugger_intf.ml))))
+     (module
+      (obj_name shexp_process__Debuggers)
+      (visibility public)
+      (source
+       (path Debuggers)
+       (intf (path process/debuggers.mli))
+       (impl (path process/debuggers.ml))))
+     (module
+      (obj_name shexp_process__Env)
+      (visibility public)
+      (source
+       (path Env)
+       (intf (path process/env.mli))
+       (impl (path process/env.ml))))
+     (module
+      (obj_name shexp_process__Exit_status)
+      (visibility public)
+      (source
+       (path Exit_status)
+       (intf (path process/exit_status.mli))
+       (impl (path process/exit_status.ml))))
+     (module
+      (obj_name shexp_process__Import)
+      (visibility public)
+      (source (path Import) (impl (path process/import.ml))))
+     (module
+      (obj_name shexp_process__Job)
+      (visibility public)
+      (source
+       (path Job)
+       (intf (path process/job.mli))
+       (impl (path process/job.ml))))
+     (module
+      (obj_name shexp_process__Prim)
+      (visibility public)
+      (source
+       (path Prim)
+       (intf (path process/prim.mli))
+       (impl (path process/prim.ml))))
+     (module
+      (obj_name shexp_process__Process)
+      (visibility public)
+      (source
+       (path Process)
+       (intf (path process/process.mli))
+       (impl (path process/process.ml))))
+     (module
+      (obj_name shexp_process)
+      (visibility public)
+      (source (path Shexp_process) (impl (path process/shexp_process.ml))))
+     (module
+      (obj_name shexp_process__Signal)
+      (visibility public)
+      (source
+       (path Signal)
+       (intf (path process/signal.mli))
+       (impl (path process/signal.ml))))
+     (module
+      (obj_name shexp_process__Std)
+      (visibility public)
+      (source (path Std) (impl (path process/std.ml))))
+     (module
+      (obj_name shexp_process__Std_io)
+      (visibility public)
+      (source
+       (path Std_io)
+       (intf (path process/std_io.mli))
+       (impl (path process/std_io.ml))))))
+   (wrapped true))))
+(library
+ (name shexp.sexp)
+ (kind normal)
+ (archives (byte sexp/shexp_sexp.cma) (native sexp/shexp_sexp.cmxa))
+ (plugins (byte sexp/shexp_sexp.cma) (native sexp/shexp_sexp.cmxs))
+ (native_archives sexp/shexp_sexp.a)
+ (requires sexplib0)
+ (main_module_name Shexp_sexp)
+ (modes byte native)
+ (modules
+  (wrapped
+   (group
+    (alias
+     (obj_name shexp_sexp)
+     (visibility public)
+     (kind alias)
+     (source (path Shexp_sexp) (impl (path sexp/shexp_sexp.ml-gen))))
+    (name Shexp_sexp)
+    (modules
+     (module
+      (obj_name shexp_sexp__Sexp)
+      (visibility public)
+      (source
+       (path Sexp)
+       (intf (path sexp/sexp.mli))
+       (impl (path sexp/sexp.ml))))
+     (module
+      (obj_name shexp_sexp__Std)
+      (visibility public)
+      (source (path Std) (impl (path sexp/std.ml))))))
+   (wrapped true))))

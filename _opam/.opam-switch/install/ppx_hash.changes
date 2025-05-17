@@ -1,0 +1,39 @@
+opam-version: "2.0"
+added: [
+  "doc/ppx_hash" {"D"}
+  "doc/ppx_hash/CHANGES.md" {"F:S479T1747497659."}
+  "doc/ppx_hash/LICENSE.md" {"F:S1126T1747497659."}
+  "doc/ppx_hash/README.md" {"F:S2495T1747497659."}
+  "lib/ppx_hash" {"D"}
+  "lib/ppx_hash/META" {"F:S1459T1747497659."}
+  "lib/ppx_hash/dune-package" {"F:S2678T1747497659."}
+  "lib/ppx_hash/expander/ppx_hash_expander.a" {"F:S108448T1747497659."}
+  "lib/ppx_hash/expander/ppx_hash_expander.cma" {"F:S164999T1747497659."}
+  "lib/ppx_hash/expander/ppx_hash_expander.cmi" {"F:S4756T1747497659."}
+  "lib/ppx_hash/expander/ppx_hash_expander.cmt" {"F:S378760T1747497659."}
+  "lib/ppx_hash/expander/ppx_hash_expander.cmti" {"F:S16833T1747497659."}
+  "lib/ppx_hash/expander/ppx_hash_expander.cmx" {"F:S13853T1747497659."}
+  "lib/ppx_hash/expander/ppx_hash_expander.cmxa" {"F:S8305T1747497659."}
+  "lib/ppx_hash/expander/ppx_hash_expander.cmxs" {"F:S129224T1747497659."}
+  "lib/ppx_hash/expander/ppx_hash_expander.ml" {"F:S21822T1747497659."}
+  "lib/ppx_hash/expander/ppx_hash_expander.mli" {"F:S575T1747497659."}
+  "lib/ppx_hash/opam" {"F:S916T1747497659."}
+  "lib/ppx_hash/ppx_hash.a" {"F:S6608T1747497659."}
+  "lib/ppx_hash/ppx_hash.cma" {"F:S10624T1747497659."}
+  "lib/ppx_hash/ppx_hash.cmi" {"F:S189T1747497659."}
+  "lib/ppx_hash/ppx_hash.cmt" {"F:S29016T1747497659."}
+  "lib/ppx_hash/ppx_hash.cmti" {"F:S3647T1747497659."}
+  "lib/ppx_hash/ppx_hash.cmx" {"F:S4030T1747497659."}
+  "lib/ppx_hash/ppx_hash.cmxa" {"F:S3991T1747497659."}
+  "lib/ppx_hash/ppx_hash.cmxs" {"F:S52960T1747497659."}
+  "lib/ppx_hash/ppx_hash.ml" {"F:S1001T1747497659."}
+  "lib/ppx_hash/ppx_hash.mli" {"F:S45T1747497659."}
+  "lib/ppx_hash/runtime-lib/ppx_hash_lib.a" {"F:S2288T1747497659."}
+  "lib/ppx_hash/runtime-lib/ppx_hash_lib.cma" {"F:S6787T1747497659."}
+  "lib/ppx_hash/runtime-lib/ppx_hash_lib.cmi" {"F:S4803T1747497659."}
+  "lib/ppx_hash/runtime-lib/ppx_hash_lib.cmt" {"F:S13328T1747497659."}
+  "lib/ppx_hash/runtime-lib/ppx_hash_lib.cmx" {"F:S4543T1747497659."}
+  "lib/ppx_hash/runtime-lib/ppx_hash_lib.cmxa" {"F:S4510T1747497659."}
+  "lib/ppx_hash/runtime-lib/ppx_hash_lib.cmxs" {"F:S50976T1747497659."}
+  "lib/ppx_hash/runtime-lib/ppx_hash_lib.ml" {"F:S53T1747497659."}
+]

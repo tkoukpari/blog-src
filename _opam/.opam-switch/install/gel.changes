@@ -1,0 +1,19 @@
+opam-version: "2.0"
+added: [
+  "doc/gel" {"D"}
+  "doc/gel/LICENSE.md" {"F:S1126T1747497673."}
+  "lib/gel" {"D"}
+  "lib/gel/META" {"F:S639T1747497673."}
+  "lib/gel/dune-package" {"F:S1132T1747497673."}
+  "lib/gel/gel.a" {"F:S17656T1747497673."}
+  "lib/gel/gel.cma" {"F:S29061T1747497673."}
+  "lib/gel/gel.cmi" {"F:S8977T1747497673."}
+  "lib/gel/gel.cmt" {"F:S65593T1747497673."}
+  "lib/gel/gel.cmti" {"F:S37927T1747497673."}
+  "lib/gel/gel.cmx" {"F:S9014T1747497673."}
+  "lib/gel/gel.cmxa" {"F:S6467T1747497673."}
+  "lib/gel/gel.cmxs" {"F:S56392T1747497673."}
+  "lib/gel/gel.ml" {"F:S2192T1747497673."}
+  "lib/gel/gel.mli" {"F:S2313T1747497673."}
+  "lib/gel/opam" {"F:S757T1747497673."}
+]

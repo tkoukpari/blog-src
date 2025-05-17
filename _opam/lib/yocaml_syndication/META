@@ -1,0 +1,27 @@
+version = "v2.2.0"
+description = ""
+requires = "yocaml"
+archive(byte) = "yocaml_syndication.cma"
+archive(native) = "yocaml_syndication.cmxa"
+plugin(byte) = "yocaml_syndication.cma"
+plugin(native) = "yocaml_syndication.cmxs"
+package "__private__" (
+  directory = "__private__"
+  package "yocaml_syndication_test" (
+    directory = "yocaml_syndication_test"
+    version = "v2.2.0"
+    description = ""
+    requires =
+    "ppx_expect.config
+     ppx_expect.runtime
+     ppx_here.runtime-lib
+     ppx_inline_test.config
+     ppx_inline_test.runtime-lib
+     yocaml
+     yocaml_syndication"
+    archive(byte) = "yocaml_syndication_test.cma"
+    archive(native) = "yocaml_syndication_test.cmxa"
+    plugin(byte) = "yocaml_syndication_test.cma"
+    plugin(native) = "yocaml_syndication_test.cmxs"
+  )
+)

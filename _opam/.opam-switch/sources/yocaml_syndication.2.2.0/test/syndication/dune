@@ -1,0 +1,7 @@
+(library
+ (name yocaml_syndication_test)
+ (package yocaml_syndication)
+ (inline_tests)
+ (libraries yocaml yocaml_syndication)
+ (preprocess
+  (pps ppx_expect)))

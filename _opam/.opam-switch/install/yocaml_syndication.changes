@@ -1,0 +1,221 @@
+opam-version: "2.0"
+added: [
+  "doc/yocaml_syndication" {"D"}
+  "doc/yocaml_syndication/CHANGES.md" {"F:S2921T1747497877."}
+  "doc/yocaml_syndication/LICENSE" {"F:S35138T1747497877."}
+  "doc/yocaml_syndication/README.md" {"F:S378T1747497877."}
+  "lib/yocaml_syndication" {"D"}
+  "lib/yocaml_syndication/META" {"F:S795T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/.public_cmi/yocaml_syndication_test.cmi"
+    {"F:S932T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/.public_cmi/yocaml_syndication_test.cmt"
+    {"F:S5937T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/.public_cmi/yocaml_syndication_test__Atom_test.cmi"
+    {"F:S6436T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/.public_cmi/yocaml_syndication_test__Atom_test.cmt"
+    {"F:S71326T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/.public_cmi/yocaml_syndication_test__Opml_test.cmi"
+    {"F:S6198T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/.public_cmi/yocaml_syndication_test__Opml_test.cmt"
+    {"F:S61642T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/.public_cmi/yocaml_syndication_test__Rss1_test.cmi"
+    {"F:S6142T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/.public_cmi/yocaml_syndication_test__Rss1_test.cmt"
+    {"F:S58053T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/.public_cmi/yocaml_syndication_test__Rss2_test.cmi"
+    {"F:S6532T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/.public_cmi/yocaml_syndication_test__Rss2_test.cmt"
+    {"F:S101354T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/.public_cmi/yocaml_syndication_test__Test_util.cmi"
+    {"F:S1684T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/.public_cmi/yocaml_syndication_test__Test_util.cmt"
+    {"F:S17467T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/.public_cmi/yocaml_syndication_test__Test_util.cmti"
+    {"F:S8672T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/.public_cmi/yocaml_syndication_test__Xml_test.cmi"
+    {"F:S6465T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/.public_cmi/yocaml_syndication_test__Xml_test.cmt"
+    {"F:S212431T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/atom_test.ml"
+    {"F:S5128T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/opml_test.ml"
+    {"F:S3804T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/rss1_test.ml"
+    {"F:S6299T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/rss2_test.ml"
+    {"F:S13494T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/test_util.ml"
+    {"F:S965T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/test_util.mli"
+    {"F:S898T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/xml_test.ml"
+    {"F:S12731T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/yocaml_syndication_test.a"
+    {"F:S172600T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/yocaml_syndication_test.cma"
+    {"F:S189227T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/yocaml_syndication_test.cmx"
+    {"F:S348T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/yocaml_syndication_test.cmxa"
+    {"F:S39327T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/yocaml_syndication_test.cmxs"
+    {"F:S196288T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/yocaml_syndication_test.ml"
+    {"F:S663T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/yocaml_syndication_test__Atom_test.cmx"
+    {"F:S6947T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/yocaml_syndication_test__Opml_test.cmx"
+    {"F:S6574T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/yocaml_syndication_test__Rss1_test.cmx"
+    {"F:S6569T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/yocaml_syndication_test__Rss2_test.cmx"
+    {"F:S7060T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/yocaml_syndication_test__Test_util.cmx"
+    {"F:S6344T1747497877."}
+  "lib/yocaml_syndication/__private__/yocaml_syndication_test/yocaml_syndication_test__Xml_test.cmx"
+    {"F:S6343T1747497877."}
+  "lib/yocaml_syndication/atom.ml" {"F:S11818T1747497877."}
+  "lib/yocaml_syndication/atom.mli" {"F:S10071T1747497877."}
+  "lib/yocaml_syndication/category.ml" {"F:S1383T1747497877."}
+  "lib/yocaml_syndication/category.mli" {"F:S1345T1747497877."}
+  "lib/yocaml_syndication/datetime.ml" {"F:S1135T1747497877."}
+  "lib/yocaml_syndication/datetime.mli" {"F:S1430T1747497877."}
+  "lib/yocaml_syndication/dune-package" {"F:S10736T1747497877."}
+  "lib/yocaml_syndication/generator.ml" {"F:S1329T1747497877."}
+  "lib/yocaml_syndication/generator.mli" {"F:S1376T1747497877."}
+  "lib/yocaml_syndication/lang.ml" {"F:S3464T1747497877."}
+  "lib/yocaml_syndication/lang.mli" {"F:S1960T1747497877."}
+  "lib/yocaml_syndication/media_type.ml" {"F:S6219T1747497877."}
+  "lib/yocaml_syndication/media_type.mli" {"F:S2842T1747497877."}
+  "lib/yocaml_syndication/opam" {"F:S870T1747497877."}
+  "lib/yocaml_syndication/opml.ml" {"F:S7938T1747497877."}
+  "lib/yocaml_syndication/opml.mli" {"F:S4930T1747497877."}
+  "lib/yocaml_syndication/person.ml" {"F:S1439T1747497877."}
+  "lib/yocaml_syndication/person.mli" {"F:S1524T1747497877."}
+  "lib/yocaml_syndication/rss1.ml" {"F:S4671T1747497877."}
+  "lib/yocaml_syndication/rss1.mli" {"F:S3058T1747497877."}
+  "lib/yocaml_syndication/rss2.ml" {"F:S12607T1747497877."}
+  "lib/yocaml_syndication/rss2.mli" {"F:S6155T1747497877."}
+  "lib/yocaml_syndication/text_input.ml" {"F:S1653T1747497877."}
+  "lib/yocaml_syndication/text_input.mli" {"F:S1314T1747497877."}
+  "lib/yocaml_syndication/tz.ml" {"F:S1559T1747497877."}
+  "lib/yocaml_syndication/tz.mli" {"F:S1444T1747497877."}
+  "lib/yocaml_syndication/xml.ml" {"F:S4963T1747497877."}
+  "lib/yocaml_syndication/xml.mli" {"F:S4200T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication.a" {"F:S317512T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication.cma" {"F:S363441T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication.cmi" {"F:S1090T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication.cmt" {"F:S6713T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication.cmti" {"F:S9434T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication.cmx" {"F:S223T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication.cmxa" {"F:S12808T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication.cmxs" {"F:S319768T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication.ml" {"F:S1063T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication.mli" {"F:S1916T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__.cmi" {"F:S1722T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__.cmt" {"F:S10008T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__.cmx" {"F:S533T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__.ml" {"F:S1245T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Atom.cmi"
+    {"F:S10712T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Atom.cmt"
+    {"F:S155693T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Atom.cmti"
+    {"F:S55732T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Atom.cmx"
+    {"F:S9348T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Category.cmi"
+    {"F:S827T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Category.cmt"
+    {"F:S15213T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Category.cmti"
+    {"F:S6860T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Category.cmx"
+    {"F:S848T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Datetime.cmi"
+    {"F:S1783T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Datetime.cmt"
+    {"F:S12672T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Datetime.cmti"
+    {"F:S9220T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Datetime.cmx"
+    {"F:S1884T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Generator.cmi"
+    {"F:S1093T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Generator.cmt"
+    {"F:S14159T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Generator.cmti"
+    {"F:S8017T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Generator.cmx"
+    {"F:S1153T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Lang.cmi"
+    {"F:S4965T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Lang.cmt"
+    {"F:S31931T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Lang.cmti"
+    {"F:S19305T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Lang.cmx"
+    {"F:S480T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Media_type.cmi"
+    {"F:S4948T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Media_type.cmt"
+    {"F:S28077T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Media_type.cmti"
+    {"F:S17854T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Media_type.cmx"
+    {"F:S293T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Opml.cmi"
+    {"F:S6532T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Opml.cmt"
+    {"F:S99139T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Opml.cmti"
+    {"F:S30144T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Opml.cmx"
+    {"F:S4827T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Person.cmi"
+    {"F:S1283T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Person.cmt"
+    {"F:S17155T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Person.cmti"
+    {"F:S9045T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Person.cmx"
+    {"F:S962T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Rss1.cmi"
+    {"F:S3427T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Rss1.cmt"
+    {"F:S58704T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Rss1.cmti"
+    {"F:S17844T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Rss1.cmx"
+    {"F:S4003T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Rss2.cmi"
+    {"F:S8846T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Rss2.cmt"
+    {"F:S165221T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Rss2.cmti"
+    {"F:S40789T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Rss2.cmx"
+    {"F:S9300T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Text_input.cmi"
+    {"F:S942T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Text_input.cmt"
+    {"F:S19750T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Text_input.cmti"
+    {"F:S7201T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Text_input.cmx"
+    {"F:S1663T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Tz.cmi" {"F:S1238T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Tz.cmt"
+    {"F:S19185T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Tz.cmti"
+    {"F:S8597T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Tz.cmx" {"F:S1026T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Xml.cmi"
+    {"F:S3715T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Xml.cmt"
+    {"F:S84850T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Xml.cmti"
+    {"F:S24696T1747497877."}
+  "lib/yocaml_syndication/yocaml_syndication__Xml.cmx"
+    {"F:S7624T1747497877."}
+]
