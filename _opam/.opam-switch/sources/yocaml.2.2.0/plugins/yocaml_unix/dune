@@ -1,4 +1,0 @@
-(library
- (name yocaml_unix)
- (public_name yocaml_unix)
- (libraries httpcats yocaml yocaml_runtime))

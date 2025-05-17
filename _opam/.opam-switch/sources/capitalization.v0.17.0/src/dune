@@ -1,6 +1,0 @@
-(library
- (name capitalization)
- (public_name capitalization)
- (libraries base)
- (preprocess
-  (pps ppx_base)))

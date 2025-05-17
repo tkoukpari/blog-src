@@ -1,5 +1,0 @@
-(cram
- (package ppxlib-tools)
- (deps
-  %{bin:ppxlib-pp-ast}
-  (package ppxlib)))

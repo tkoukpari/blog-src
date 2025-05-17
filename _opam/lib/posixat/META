@@ -1,7 +1,0 @@
-version = "v0.17.0"
-description = ""
-requires = "base ppx_sexp_conv.runtime-lib sexplib0 unix"
-archive(byte) = "posixat.cma"
-archive(native) = "posixat.cmxa"
-plugin(byte) = "posixat.cma"
-plugin(native) = "posixat.cmxs"

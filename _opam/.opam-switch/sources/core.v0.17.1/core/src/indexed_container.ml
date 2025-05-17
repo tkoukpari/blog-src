@@ -1,2 +1,0 @@
-include Base.Indexed_container
-include Indexed_container_intf

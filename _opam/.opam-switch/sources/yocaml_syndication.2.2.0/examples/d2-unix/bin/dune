@@ -1,3 +1,0 @@
-(executable
- (name d2_unix)
- (libraries d2 yocaml_unix))

@@ -1,8 +1,0 @@
-(library
- (foreign_stubs
-  (language c)
-  (names bigstring_stubs))
- (name shexp_bigstring)
- (public_name shexp.bigstring)
- (libraries threads)
- (preprocess no_preprocessing))

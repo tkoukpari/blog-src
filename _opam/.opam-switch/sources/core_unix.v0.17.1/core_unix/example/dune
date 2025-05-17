@@ -1,6 +1,0 @@
-(executables
- (modes byte exe)
- (names example)
- (libraries async command_unix core)
- (preprocess
-  (pps ppx_jane)))

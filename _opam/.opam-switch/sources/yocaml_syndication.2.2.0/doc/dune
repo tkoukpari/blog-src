@@ -1,7 +1,0 @@
-(documentation
- (package yocaml))
-
-(mdx
- (files *.mld)
- (libraries yocaml)
- (preludes mdx_prelude.ml))

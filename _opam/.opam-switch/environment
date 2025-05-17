@@ -1,7 +1,0 @@
-OPAM_SWITCH_PREFIX	=	/Users/tiamkoukpari/blog-src/_opam	Prefix\ of\ the\ current\ opam\ switch
-CAML_LD_LIBRARY_PATH	=	/Users/tiamkoukpari/blog-src/_opam/lib/stublibs	Updated\ by\ package\ ocaml-compiler
-OCAMLTOP_INCLUDE_PATH	+=	/Users/tiamkoukpari/blog-src/_opam/lib/toplevel	Updated\ by\ package\ ocaml
-CAML_LD_LIBRARY_PATH	=	/Users/tiamkoukpari/blog-src/_opam/lib/ocaml/stublibs:/Users/tiamkoukpari/blog-src/_opam/lib/ocaml	Updated\ by\ package\ ocaml
-CAML_LD_LIBRARY_PATH	+=	/Users/tiamkoukpari/blog-src/_opam/lib/stublibs	Updated\ by\ package\ ocaml
-OCAML_TOPLEVEL_PATH	=	/Users/tiamkoukpari/blog-src/_opam/lib/toplevel	Updated\ by\ package\ ocaml
-PATH	=+=	/Users/tiamkoukpari/blog-src/_opam/bin	Binary\ dir\ for\ opam\ switch\ /Users/tiamkoukpari/blog-src
