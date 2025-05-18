@@ -1,6 +1,6 @@
 include Composition_infix
 
 let write_endline string ~filename =
-  let open Shexp_process in
-  echo ~where:Stdout ~n:() string |> outputs_to filename
-;;
+  string
+  |> Shexp_process.echo ~where:Stdout ~n:()
+  |> Shexp_process.outputs_to filename
