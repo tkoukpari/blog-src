@@ -10,6 +10,5 @@ type t =
   | `Assoc of (string * t) list
   | `List of t list
   | `Tuple of t list
-  | `Variant of string * t option
-  ]
+  | `Variant of string * t option ]
 [@@deriving sexp_of]
