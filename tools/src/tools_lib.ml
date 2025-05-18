@@ -67,7 +67,7 @@ module Post_metadata = struct
   open Ppx_yojson_conv_lib.Yojson_conv
 
   type t = {
-    date : Yojson_date.t;
+    date : Json.Date.t;
     title : string;
     href : string;
     root_dir : string;

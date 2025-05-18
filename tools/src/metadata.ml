@@ -5,8 +5,8 @@ module From_frontmatter = struct
   open Ppx_yojson_conv_lib.Yojson_conv
 
   type t = {
-    date : Yojson_date.t;
-    update_date : Yojson_date.t option; [@default None]
+    date : Json.Date.t;
+    update_date : Json.Date.t option; [@default None]
     title : string;
     category : string; [@default "uncategorized"]
     tags : string list; [@default []]
@@ -25,7 +25,7 @@ module From_frontmatter = struct
               (exn : exn)
               (json : Json.t)]
 
-  let load filename = filename |> Markdown.get_metadata_json >>| of_json_str
+  let load filename = filename |> Markdown.json.f >>| of_json_str
 end
 
 type t = {
