@@ -16,7 +16,7 @@ module Site_config = struct
 
   let generator t =
     Generator.make
-      ~uri:"https://github.com/mt-caret/blog-src"
+      ~uri:"https://github.com/tkoukpari/blog-src"
       ~version:t.site_generator_version
       "blog-src"
   ;;
