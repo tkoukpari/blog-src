@@ -13,7 +13,8 @@ let generate_posts_for_syndication ~input_dir ~output_dir
     ({ base_url; _ } as site_config : Syndication.Site_config.t) =
   let open Shexp_process.Let_syntax in
   let%bind posts =
-    Post.load_all ~input_dir >>| List.map ~f:(Syndication.Post.create ~base_url)
+    Post.load_all ~dir:input_dir
+    >>| List.map ~f:(Syndication.Post.create ~base_url)
   in
   let%bind () =
     Syndication.create_rss_feed site_config posts
@@ -172,7 +173,7 @@ let build_index =
     eval
     @@
     let%bind.Shexp_process post_metadata =
-      Metadata.load_all ~input_dir
+      Metadata.load_all ~dir:input_dir
       >>| (* We want the newest posts first *)
       List'.rev
       >>| List'.filter ~f:(Build_index_for.filter build_index_for)
@@ -250,7 +251,8 @@ let print_dune_rules =
     match kind with
     | `Index ->
         let%bind slugs =
-          Path_and_slug.readdir ~input_dir >>| List'.map ~f:Path_and_slug.slug
+          Path_and_slug.readdir ~dir:input_dir
+          >>| List'.map ~f:Path_and_slug.slug
         in
         let post_generation_rules =
           List'.map slugs
@@ -272,7 +274,7 @@ let print_dune_rules =
   (deps %{String.concat ~sep:" " output_files}))
   |}]
     | `Category ->
-        let%bind metadata = Metadata.load_all ~input_dir in
+        let%bind metadata = Metadata.load_all ~dir:input_dir in
         let all_categories =
           "uncategorized" :: List'.map metadata ~f:Metadata.category
           |> List'.dedup_and_sort ~compare:String.compare
@@ -298,7 +300,7 @@ let print_dune_rules =
   (deps %{String.concat ~sep:" " output_files}))
   |}]
     | `Tag ->
-        let%bind metadata = Metadata.load_all ~input_dir in
+        let%bind metadata = Metadata.load_all ~dir:input_dir in
         let all_tags =
           List'.concat_map metadata ~f:Metadata.tags
           |> List'.dedup_and_sort ~compare:String.compare

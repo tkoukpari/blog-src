@@ -7,4 +7,4 @@ type t =
   }
 [@@deriving fields ~getters]
 
-val readdir : input_dir:Filename.t -> t list Shexp_process.t
+val readdir : dir:Filename.t -> t list Shexp_process.t
