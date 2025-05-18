@@ -202,7 +202,7 @@ let%test_module _ =
         <feed xmlns="http://www.w3.org/2005/Atom">
           <id>https://test.com</id>
           <title type="text">Test</title>
-          <generator uri="https://github.com/mt-caret/blog-src" version="1.0.0">blog-src</generator>
+          <generator uri="https://github.com/tkoukpari/blog-src" version="1.0.0">blog-src</generator>
           <updated>1970-01-01T00:00:00Z</updated>
           <author>
             <name>author</name>
