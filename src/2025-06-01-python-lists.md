@@ -22,8 +22,8 @@ let ints = (::) (1, (::) (2, (::) 3 []))
 ```
 
 a list can be empty, or it can have a value of type `'a` and a pointer to the
-next element, which must also be a `'a list`. syntax sugar will convert the
-above value to:
+next element, which must also be a `'a list`. syntax sugar will convert `ints`
+into:
 
 ```ocaml
 let ints = [ 1; 2; 3 ]
@@ -40,7 +40,7 @@ type t =
   | C : string -> t
 ```
 
-but gadts in general don't require that property:
+gadts in general don't require that property:
 
 ```ocaml
 type _ t =
@@ -51,24 +51,24 @@ type _ t =
 
 ### python lists using gadts
 
-we can rewrite our list as a gadt, but point each element to a list with a
-possibly different element type::::
+we can rewrite our list as a gadt and point each element to a list with a
+possibly different element type:
 
 ```ocaml
 type _ list = 
-  | [] : unit list 
+  | []   : unit list 
   | (::) : 'a * 'b list -> ('a * 'b) list
 
 let things : (string * (int * unit)) t = (::) ("hi", (::) (1, []))
 ```
 
-syntax sugar will convert the above value to:
+syntax sugar will convert `things` into:
 
 ```ocaml
 let things = [ "hi"; 1 ]
 ```
 
-just like python... except that python lists are not linked lists :)
+and BAM! just like python...
 
 ```python
 things = [ "hi", 1 ]
