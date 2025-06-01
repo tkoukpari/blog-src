@@ -18,7 +18,7 @@ type 'a list =
   | [] 
   | (::) of 'a * 'a list
 
-let ints = (::) (1, (::) (2, (::) 3 []))
+let ints = (::) (1, (::) (2, (::) (3, [])))
 ```
 
 a list can be empty, or it can have a value of type `'a` and a pointer to the
