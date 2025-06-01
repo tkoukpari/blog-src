@@ -107,7 +107,7 @@ module Build_index_for = struct
 
   let title t =
     match t with
-    | All -> "blog"
+    | All -> "blog 2"
     | Category category -> [%string "'category: %{category}'"]
     | Tag tag -> [%string "'tag: %{tag}'"]
 
