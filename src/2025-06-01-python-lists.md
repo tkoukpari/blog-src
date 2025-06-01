@@ -59,7 +59,7 @@ type _ list =
   | []   : unit list 
   | (::) : 'a * 'b list -> ('a * 'b) list
 
-let things : (string * (int * unit)) t = (::) ("hi", (::) (1, []))
+let things : (string * (int * unit)) list = (::) ("hi", (::) (1, []))
 ```
 
 syntax sugar will convert `things` into:
