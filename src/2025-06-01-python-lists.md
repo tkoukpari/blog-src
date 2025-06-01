@@ -68,7 +68,7 @@ syntax sugar will convert `things` into:
 let things = [ "hi"; 1 ]
 ```
 
-and BAM just like python... but "typed"
+a strongly typed python list
 
 ```python
 things = [ "hi", 1 ]
