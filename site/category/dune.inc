@@ -4,6 +4,21 @@
  (deps ../../tools/bin/tools.exe (source_tree ../../src) (glob_files ../../templates/*.html) ../git-revision)
  (action
   (with-stdout-to
+   meta.html
+   (run
+    ../../tools/bin/tools.exe
+    build-index
+    ../../src
+    -category meta
+    -git-revision "%{read-lines:../git-revision}"
+    -template ../../templates/index.html
+    -root-dir ..
+    ))))
+
+(rule
+ (deps ../../tools/bin/tools.exe (source_tree ../../src) (glob_files ../../templates/*.html) ../git-revision)
+ (action
+  (with-stdout-to
    tech.html
    (run
     ../../tools/bin/tools.exe
@@ -33,5 +48,5 @@
 ; aggregation alias
 (alias
   (name default)
-  (deps tech.html uncategorized.html))
+  (deps meta.html tech.html uncategorized.html))
   
