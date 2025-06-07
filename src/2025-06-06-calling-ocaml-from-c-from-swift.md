@@ -65,8 +65,8 @@ let res = fib(n)
 print("swift printing the fibonacci number for \(n): \(res)")
 ```
 
-we'll use dune to compile the ocaml code into a static library, compile the c
-object file, and link everything with swiftc:
+dune compiles the ocaml code into a static library, compiles the c object file,
+and links everything with swiftc:
 
 ```
 (executables
@@ -103,7 +103,7 @@ object file, and link everything with swiftc:
    -lcamlrun)))
 ```
 
-and voila!
+and voila! time to get schwifty 
 
 ```bash
 $ dune build
