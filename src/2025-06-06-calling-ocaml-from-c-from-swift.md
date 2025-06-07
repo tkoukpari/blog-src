@@ -20,21 +20,17 @@ let fib =
   let rec f n = if n < 2 then 1 else f (n - 1) + f (n - 2) in
   print_endline "ocaml invoked by c";
   f
+
+let _ = Callback.register "fib" fib
 ```
 
-the function needs to be registered with the c runtime[^callback]
+the closure needs to be registered with the c runtime[^callback]
 
 [^callback]:
   [caml.org/manual/5.3/api/Callback.html](https://ocaml.org/manual/5.3/api/Callback.html)
 
-```ocaml
-let _ = Callback.register "fib" fib
-```
-
-there isn't any overhead to making swift aware of the relevant c function, but c
-needs to initialize the ocaml runtime and set a pointer to the ocaml
-function[^intfc]
-
+there isn't any overhead to making swift aware of the c code, but c needs to
+initialize the ocaml runtime and set a pointer to the ocaml closure[^intfc]
 
 ```c
 static void init_ocaml(void) __attribute__((constructor));
