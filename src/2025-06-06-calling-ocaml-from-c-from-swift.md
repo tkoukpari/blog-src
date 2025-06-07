@@ -31,7 +31,17 @@ the callback needs to be registered with the c runtime[^callback]
 let _ = Callback.register "fib" fib
 ```
 
-the c code needs to initializes the ocaml runtime[^intfc]
+there isn't any overhead to making swift aware of the c callback, so that can
+simply be included in the c file
+
+```c
+int fib(int n) {
+    printf("c invoked by swift\n");
+    return Int_val(caml_callback(*fib_closure, Val_int(n)));
+}
+```
+
+but the c code needs to initialize the ocaml runtime[^intfc]
 
 ```c
 static void init_ocaml(void) __attribute__((constructor));
@@ -45,16 +55,6 @@ static void init_ocaml(void) {
 [^intfc]:
   [ocaml.org/manual/5.3/intfc.html](https://ocaml.org/manual/5.3/intfc.html)
   
-there isn't any overhead to making swift aware of the c callback so that simply
-be  included in the c file
-
-```c
-int fib(int n) {
-    printf("c invoked by swift\n");
-    return Int_val(caml_callback(*fib_closure, Val_int(n)));
-}
-```
-
 and finally the swift code that calls the c function:
 
 ```swift
