@@ -32,7 +32,7 @@ let _ = Callback.register "fib" fib
 ```
 
 there isn't any overhead to making swift aware of the c callback, so that can
-simply be included in the c file
+simply be included in the c file:
 
 ```c
 int fib(int n) {
@@ -41,7 +41,7 @@ int fib(int n) {
 }
 ```
 
-but the c code needs to initialize the ocaml runtime[^intfc]
+but c needs to initialize the ocaml runtime[^intfc]
 
 ```c
 static void init_ocaml(void) __attribute__((constructor));
