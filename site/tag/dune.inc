@@ -4,21 +4,6 @@
  (deps ../../tools/bin/tools.exe (source_tree ../../src) (glob_files ../../templates/*.html) ../git-revision)
  (action
   (with-stdout-to
-   OCaml.html
-   (run
-    ../../tools/bin/tools.exe
-    build-index
-    ../../src
-    -tag OCaml
-    -git-revision "%{read-lines:../git-revision}"
-    -template ../../templates/index.html
-    -root-dir ..
-    ))))
-
-(rule
- (deps ../../tools/bin/tools.exe (source_tree ../../src) (glob_files ../../templates/*.html) ../git-revision)
- (action
-  (with-stdout-to
    dune.html
    (run
     ../../tools/bin/tools.exe
@@ -45,8 +30,23 @@
     -root-dir ..
     ))))
 
+(rule
+ (deps ../../tools/bin/tools.exe (source_tree ../../src) (glob_files ../../templates/*.html) ../git-revision)
+ (action
+  (with-stdout-to
+   swift.html
+   (run
+    ../../tools/bin/tools.exe
+    build-index
+    ../../src
+    -tag swift
+    -git-revision "%{read-lines:../git-revision}"
+    -template ../../templates/index.html
+    -root-dir ..
+    ))))
+
 ; aggregation alias
 (alias
   (name default)
-  (deps OCaml.html dune.html ocaml.html))
+  (deps dune.html ocaml.html swift.html))
   
