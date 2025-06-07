@@ -41,7 +41,7 @@ int fib(int n) {
 }
 ```
 
-but c needs to initialize the ocaml runtime[^intfc]
+but c needs to initialize the ocaml runtime and find the ocaml callback[^intfc]
 
 ```c
 static void init_ocaml(void) __attribute__((constructor));
