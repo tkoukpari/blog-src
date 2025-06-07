@@ -22,7 +22,7 @@ let fib =
   f
 ```
 
-the callback needs to be registered with the c runtime[^callback]
+the function needs to be registered with the c runtime[^callback]
 
 [^callback]:
   [caml.org/manual/5.3/api/Callback.html](https://ocaml.org/manual/5.3/api/Callback.html)
@@ -31,8 +31,9 @@ the callback needs to be registered with the c runtime[^callback]
 let _ = Callback.register "fib" fib
 ```
 
-there isn't any overhead to making swift aware of the c callback, but c needs to
-initialize the ocaml runtime and set a pointer to the ocaml callback[^intfc]
+there isn't any overhead to making swift aware of the relevant c function, but c
+needs to initialize the ocaml runtime and set a pointer to the ocaml
+function[^intfc]
 
 
 ```c
@@ -52,7 +53,7 @@ int fib(int n) {
 [^intfc]:
   [ocaml.org/manual/5.3/intfc.html](https://ocaml.org/manual/5.3/intfc.html)
   
-and finally the swift code that calls the c function:
+and finally the swift code that calls into c:
 
 ```swift
 @_silgen_name("fib") func fib(_ n: Int32) -> Int32
