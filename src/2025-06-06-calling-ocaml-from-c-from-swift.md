@@ -114,6 +114,6 @@ ocaml invoked by c
 swift printing the fibonacci number for 10: 89
 ```
 
-The full code is available in the
+the full code is available in the
 [calling-ocaml-from-c-from-swift](https://github.com/tkoukpari/calling-ocaml-from-c-from-swift)
-repository.
+repository
