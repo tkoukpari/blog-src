@@ -1,5 +1,5 @@
 ---
-title: calling ocaml from c from swift in dune
+title: calling ocaml from c from swift
 date: 2025-06-06
 category: tech
 tags:
@@ -12,39 +12,43 @@ uuid: a079e94a-23db-48c0-8162-e924bd9a851e
 now that we can
 [call ocaml from c](https://mt-caret.github.io/blog/posts/2025-02-02-calling-ocaml-from-c-in-dune.html),
 let's try calling ocaml from c from swift so we can make ocaml iphone apps.
-we'll continue to use dune instead of make.
 
-here's the ocaml code we want to run:
+here's the ocaml code we'll want to run:
 
 ```ocaml
 let fib =
   let rec f n = if n < 2 then 1 else f (n - 1) + f (n - 2) in
   print_endline "ocaml invoked by c";
   f
+```
 
+the callback needs to be registered with the c runtime[^callback]
+
+[^callback]:
+  [caml.org/manual/5.3/api/Callback.html](https://ocaml.org/manual/5.3/api/Callback.html)
+
+```ocaml
 let _ = Callback.register "fib" fib
 ```
 
-the [callback](https://ocaml.org/manual/5.3/api/Callback.html) library registers
-ocaml values with the c runtime
-
-here's the c code that [initializes the ocaml runtime](https://ocaml.org/manual/5.3/intfc.html) and includes a function to
-call the registered ocaml callback. 
+the c code needs to initializes the ocaml runtime[^intfc]
 
 ```c
-#include <stdio.h>
-#include <stdint.h>
-#include <caml/callback.h>
-
-static const value * fib_closure = NULL;
-
 static void init_ocaml(void) __attribute__((constructor));
 static void init_ocaml(void) {
     char *argv[] = {"main", NULL};
     caml_startup(argv);
     fib_closure = caml_named_value("fib");
 }
+```
 
+[^intfc]:
+  [ocaml.org/manual/5.3/intfc.html](https://ocaml.org/manual/5.3/intfc.html)
+  
+there isn't any overhead to making swift aware of the c callback so that simply
+be  included in the c file
+
+```c
 int fib(int n) {
     printf("c invoked by swift\n");
     return Int_val(caml_callback(*fib_closure, Val_int(n)));
@@ -54,8 +58,6 @@ int fib(int n) {
 and finally the swift code that calls the c function:
 
 ```swift
-import Foundation
-
 @_silgen_name("fib") func fib(_ n: Int32) -> Int32
 
 let n = Int32(CommandLine.arguments[1])!
@@ -63,8 +65,8 @@ let res = fib(n)
 print("swift printing the fibonacci number for \(n): \(res)")
 ```
 
-the dune file compiles the ocaml code into a static library the c object file,
-and links everything with swiftc:
+we'll use dune to compile the ocaml code into a static library, compile the c
+object file, and link everything with swiftc:
 
 ```
 (executables
