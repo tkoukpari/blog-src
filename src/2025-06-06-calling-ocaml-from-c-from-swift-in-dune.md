@@ -12,8 +12,9 @@ uuid: a079e94a-23db-48c0-8162-e924bd9a851e
 now that we can
 [call ocaml from c](https://mt-caret.github.io/blog/posts/2025-02-02-calling-ocaml-from-c-in-dune.html),
 let's try calling ocaml from c from swift so we can make ocaml iphone apps.
+we'll continue to use dune instead of make.
 
-we'll continue to use dune instead of make. the ocaml code we want to run:
+here's the ocaml code we want to run:
 
 ```ocaml
 let fib =
@@ -27,7 +28,7 @@ let _ = Callback.register "fib" fib
 the [callback](https://ocaml.org/manual/5.3/api/Callback.html) library registers
 ocaml values with the c runtime
 
-the c code that [initializes the ocaml runtime](https://ocaml.org/manual/5.3/intfc.html) and includes a function to
+here's the c code that [initializes the ocaml runtime](https://ocaml.org/manual/5.3/intfc.html) and includes a function to
 call the registered ocaml callback. 
 
 ```c
@@ -62,7 +63,8 @@ let res = fib(n)
 print("swift printing the fibonacci number for \(n): \(res)")
 ```
 
-compiling the ocaml code into a static library:
+the dune file compiles the ocaml code into a static library the c object file,
+and links everything with swiftc:
 
 ```
 (executables
@@ -74,11 +76,7 @@ compiling the ocaml code into a static library:
  (deps mod.exe.o)
  (action
   (run ar rcs %{targets} %{deps})))
-```
 
-compiling the c object file, and finally linking everything with swiftc:
-
-```
 (rule
  (targets main.o)
  (deps main.c)
