@@ -14,21 +14,21 @@ my immediate reaction to the conflict:
 
 - the complete failure to protect the Iranian people, especially scientists, should be investigated. makes me think the existing government in Iran is an existential threat to Iran
 
-- it would be devastating if Iran did not start a run for a nuke the second they realized they were under attack. Larijani said as much (a few weeks ago)[https://www.memri.org/tv/khamenei-advisor-ali-larijani-america-attack-iran-push-nuclear-weapons].
+- it would be devastating if Iran did not start a run for a nuke the second they realized they were under attack. Larijani said as much [a few weeks ago](https://www.memri.org/tv/khamenei-advisor-ali-larijani-america-attack-iran-push-nuclear-weapons)
 
 perhaps an exeprt from a poem, written by Dylan Thomas:
 
-Do not go gentle into that good night,
-Old age should burn and rave at close of day;
-Rage, rage against the dying of the light.
+Do not go gentle into that good night, <br>
+Old age should burn and rave at close of day; <br>
+Rage, rage against the dying of the light. <br>
 
-Though wise men at their end know dark is right,
-Because their words had forked no lightning they
-Do not go gentle into that good night.
+Though wise men at their end know dark is right, <br>
+Because their words had forked no lightning they <br>
+Do not go gentle into that good night. <br>
 
 ...
 
-And you, my father, there on the sad height,
-Curse, bless, me now with your fierce tears, I pray.
-Do not go gentle into that good night.
-Rage, rage against the dying of the light.
+And you, my father, there on the sad height, <br>
+Curse, bless, me now with your fierce tears, I pray. <br>
+Do not go gentle into that good night. <br>
+Rage, rage against the dying of the light. <br>
