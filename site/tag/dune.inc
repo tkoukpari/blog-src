@@ -4,6 +4,21 @@
  (deps ../../tools/bin/tools.exe (source_tree ../../src) (glob_files ../../templates/*.html) ../git-revision)
  (action
   (with-stdout-to
+   Iran.html
+   (run
+    ../../tools/bin/tools.exe
+    build-index
+    ../../src
+    -tag Iran
+    -git-revision "%{read-lines:../git-revision}"
+    -template ../../templates/index.html
+    -root-dir ..
+    ))))
+
+(rule
+ (deps ../../tools/bin/tools.exe (source_tree ../../src) (glob_files ../../templates/*.html) ../git-revision)
+ (action
+  (with-stdout-to
    dune.html
    (run
     ../../tools/bin/tools.exe
@@ -48,5 +63,5 @@
 ; aggregation alias
 (alias
   (name default)
-  (deps dune.html ocaml.html swift.html))
+  (deps Iran.html dune.html ocaml.html swift.html))
   
