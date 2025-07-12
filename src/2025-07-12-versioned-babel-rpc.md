@@ -13,13 +13,14 @@ servers, have them talk to each other, and have them interact with the outside
 world.
 
 everything will be written in ocaml. I'll assume knowledge of the code in
-[rpc-infrastructure](https://github.com/tkoukpari/rpc-infrastructure)
+[rpc-infrastructure](https://github.com/tkoukpari/rpc-infrastructure).
 
-under the server-client-rpc directory, there are three libraries and an
-executable. the libraries are split across server, client, and protocol.
+there are three relevant libraries under the server-client-rpc directory. the
+libraries are split across server, client, and protocol to avoid a build
+dependency between server and client.
 
-the rpc is implemented with [babel](https://github.com/janestreet/babel) but
-should otherwise be straightforward to follow (two versions of a simple query
-and a unit response).
+the rpc is implemented with [babel](https://github.com/janestreet/babel) and is
+otherwise straightforward to follow (two versions of a simple query and a unit
+response).
 
 blogs in this series will be tagged with rpc-infrastructure.
