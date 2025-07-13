@@ -59,9 +59,21 @@
     -git-revision "%{read-lines:../git-revision}"
     -template ../../templates/post.html
     )))
+(rule
+ (deps ../../tools/bin/tools.exe (glob_files ../../templates/*.html) ../../src/2025-07-12-versioned-babel-rpc.md ../git-revision)
+ (targets 2025-07-12-versioned-babel-rpc.html)
+ (action
+  (run
+    ../../tools/bin/tools.exe
+    build-post
+    ../../src/2025-07-12-versioned-babel-rpc.md
+    2025-07-12-versioned-babel-rpc.html
+    -git-revision "%{read-lines:../git-revision}"
+    -template ../../templates/post.html
+    )))
 
 ; aggregation alias
 (alias
   (name default)
-  (deps 2025-05-31-blog-1.html 2025-06-01-python-lists.html 2025-06-06-calling-ocaml-from-c-from-swift.html 2025-06-21-politicking.html 2025-06-22-fool-me-twice.html))
+  (deps 2025-05-31-blog-1.html 2025-06-01-python-lists.html 2025-06-06-calling-ocaml-from-c-from-swift.html 2025-06-21-politicking.html 2025-06-22-fool-me-twice.html 2025-07-12-versioned-babel-rpc.html))
   
