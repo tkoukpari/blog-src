@@ -9,8 +9,8 @@ uuid: 677dabd5-8e1e-4b0a-b6bd-99821e73ffb7
 ---
 
 I'm going to write a series on rpc infrastructure: how to set up an ecosystem of
-servers, have them talk to each other, and have them interact with the outside
-world.
+servers, have them talk to each other via rpc, and have them interact with the
+outside world.
 
 everything will be written in ocaml. I'll assume knowledge of the code in
 [rpc-infrastructure](https://github.com/tkoukpari/rpc-infrastructure).
