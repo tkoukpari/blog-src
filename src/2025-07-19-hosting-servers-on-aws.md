@@ -1,6 +1,6 @@
 ---
 title: hosting servers on aws
-date: 2025-07-12
+date: 2025-07-19
 category: tech
 tags:
 - ocaml
