@@ -18,7 +18,7 @@ are three relevant libraries under the server-client-rpc directory. the
 libraries are split across server, client, and protocol to avoid a build
 dependency between server and client.
 
-the rpc is implemented with [babel](https://github.com/janestreet/babel) but is
-otherwise easy to follow (two versions of an `int` query and a unit response).
+the rpc is implemented with [babel](https://github.com/janestreet/babel), but is
+otherwise easy to follow (two versions of an `int` query and a `unit` response).
 
 blogs in this series will be tagged with rpc-infrastructure.
