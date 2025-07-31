@@ -1,0 +1,15 @@
+(library
+ (name tools_lib)
+ (libraries
+  core
+  core_unix.command_unix
+  core_unix.filename_unix
+  core_kernel.composition_infix
+  formatting_lib
+  ppx_yojson_conv_lib
+  shexp.process
+  yocaml_syndication
+  yojson)
+ (inline_tests)
+ (preprocess
+  (pps ppx_jane ppx_yojson_conv)))
