@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "ocamllabs.ocaml-platform",
+        "ms-vscode.vscode-json",
+        "bradlc.vscode-tailwindcss"
+    ]
+}

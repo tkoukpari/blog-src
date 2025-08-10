@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- taken from https://github.com/jgm/pandoc-templates/blob/05d510b4dc5af87cbf25d92fa8318f44e155b919/default.html5 -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="$lang$" xml:lang="$lang$" $if(dir)$ dir="$dir$" $endif$>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  $for(author-meta)$
+  <meta name="author" content="$author-meta$" />
+  $endfor$
+  $if(date-meta)$
+  <meta name="dcterms.date" content="$date-meta$" />
+  $endif$
+  $if(keywords)$
+  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
+  $endif$
+  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+  <link rel="stylesheet" href="$root_dir$/static/reset.css" />
+  <link rel="stylesheet" href="$root_dir$/static/custom.css" />
+  $for(css)$
+  <link rel="stylesheet" href="$css$" />
+  $endfor$
+</head>
+
+<body>
+  <article>
+    $if(title)$
+    <header id="title-block-header">
+      <h1 class="title">$title$</h1>
+    </header>
+    $endif$
+    $for(include-before)$
+    $include-before$
+    <br>
+    $endfor$
+    <ul>
+      $for(series)$
+      $if(series.title)$
+      <br>
+      $series.title$
+      $else$
+      <br>
+      $endif$
+      $for(series.posts)$
+      $if(series.posts.date)$
+      <li><a href="$series.posts.href$">$series.posts.date$: $series.posts.title$</a></li>
+      $endif$
+      $endfor$
+      $endfor$
+    </ul>
+    $body$
+    $for(include-after)$
+    $include-after$
+    $endfor$
+    <hr>
+    <small>
+      $if(show_index_link)$
+      <a href="$root_dir$/index.html">index</a> |
+      $endif$
+      <a href="$root_dir$/atom.xml">atom</a>/<a href="$root_dir$/rss.xml">rss</a> |
+      generated off rev <a href="https://github.com/tkoukpari/blog-src/commit/$rev$">$rev$</a>
+    </small>
+  </article>
+</body>
+
+</html>

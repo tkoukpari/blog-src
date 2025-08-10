@@ -1,0 +1,17 @@
+[
+    {
+        "key": "f12",
+        "command": "editor.action.revealDefinition",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+shift+g",
+        "command": "editor.action.revealDefinition",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": ", g i",
+        "command": "editor.action.revealDefinition",
+        "when": "editorTextFocus"
+    }
+]

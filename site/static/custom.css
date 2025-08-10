@@ -1,0 +1,40 @@
+/* based on http://bettermotherfuckingwebsite.com/ */
+
+body {
+  margin: 40px auto;
+  max-width: 650px;
+  line-height: 1.6;
+  font-size: 14px;
+  color: #444;
+  padding: 0 10px
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2
+}
+
+pre {
+  background: #EAEAEA;
+  border-radius: 5px;
+  overflow: auto;
+  line-height: 1.4;
+  font-size: 80%;
+}
+
+p>code {
+  padding: 0em .4em;
+  background: #EAEAEA;
+  border-radius: 5px;
+}
+
+.sourceCode {
+  background: #EAEAEA;
+  border-radius: 5px;
+}
+
+header {
+  margin-bottom: 2em;
+  text-align: center;
+}

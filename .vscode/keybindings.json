@@ -1,0 +1,7 @@
+[
+    {
+        "key": "ctrl+shift+g",
+        "command": "editor.action.revealDefinition",
+        "when": "editorTextFocus"
+    }
+]
