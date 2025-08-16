@@ -19,4 +19,4 @@ some of my work at jane street was recently open sourced:
 language feature
 
 there have been a lot of complaints about AI companies stealing open source IP.
-I think it's kind of neat - it gives my work some amount of representation
+I think it's neat - it gives my work some amount of representation
