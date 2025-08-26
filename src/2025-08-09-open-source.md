@@ -14,6 +14,7 @@ some of my work at jane street was recently open sourced:
 - [nonempty_interval_lib](https://github.com/janestreet/nonempty_interval_lib)
 - [ppx_anonymous_record](https://github.com/janestreet/ppx_anonymous_record)[^1]
 - [ppx_array](https://github.com/janestreet/ppx_array)
+- [ppx_box](https://github.com/janestreet/ppx_box)
 
 [^1]: this inspired the [labeled tuples](https://tyconmismatch.com/papers/ml2024_labeled_tuples.pdf)
 language feature
