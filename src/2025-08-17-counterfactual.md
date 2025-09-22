@@ -17,14 +17,10 @@ uuid: 3cc6d8b8-3d7f-4a0e-b17a-fc059da27fa9
 
 تئوری سازمان متصدی سه شرط لازم بازدارندگی هسته ایی ــ جلوگیری از جنگ، توسعه نیروهای مقاوم در برابر ضربه دوم، و اجتناب وقوع حوادث را غیر متحمل میکند 
 
-ساگان در نتیجه‌گیری‌اش، می‌گوید کشورهایی که به دنبال سلاح‌های هسته‌ای هستند «باید قانع شوند که این کار به نفعشان نیست»، 
-
-تا اینجای متن را خوانده بودم، بدون اینکه متوجه غیبت عمدیِ فرضیهٔ جایگزین شوم
+ساگان در نتیجه‌گیری‌اش می‌گوید کشورهایی که به دنبال سلاح‌های هسته‌ای هستند <<باید قانع شوند که این کار به نفعشان نیست.<< تا اینجای متن را خوانده بودم، بدون اینکه متوجه غیبت عمدیِ فرضیهٔ جایگزین شوم:
 
 اگر کشورهایی مانند عراق، اوکراین به دنبال سلاح‌های هسته‌ای نروند چه اتفاقی می‌افتد؟
 
 </div>
-
-in his conclusion, Sagan says countries pursuing nuclear weapons <<need to be convinced it is not in their interest,>> and somehow, I read this far without realizing the conveniently omitted counterfactual:
 
 what happens if they don't pursue nuclear weapons? what happens if they are Iraq, Ukraine, etc.?
